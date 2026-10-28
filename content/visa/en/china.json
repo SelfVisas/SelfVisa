@@ -1,0 +1,92 @@
+{
+  "slug": "china",
+  "title": "China visa",
+  "country": "China",
+  "nav_title": "China",
+  "tagline": "Tourist, business and student visas to the People’s Republic of China.",
+  "chips": [
+    "L — tourism",
+    "M — business",
+    "X1/X2 — study",
+    "Q/S — family"
+  ],
+  "facts": [
+    {
+      "label": "Visa types",
+      "value": "L, M, X1/X2, Q, S"
+    },
+    {
+      "label": "Where to apply",
+      "value": "Chinese visa centre in Bishkek"
+    },
+    {
+      "label": "Form",
+      "value": "Online China visa application"
+    },
+    {
+      "label": "Service fee",
+      "value": "Ask us on WhatsApp"
+    }
+  ],
+  "intro": "China is one of the most popular routes from Kyrgyzstan — tourism, sourcing, trade fairs and study. Each purpose has its own visa category and document set.\n\nWe complete the online form, prepare the invitation or bookings, review your documents and book your submission.",
+  "services": [
+    "Choosing the visa category",
+    "Completing the online application",
+    "Help with an invitation from a Chinese company",
+    "Hotel bookings and itinerary for a tourist visa",
+    "X1/X2 student visa with JW202 and admission letter",
+    "Submission booking and support"
+  ],
+  "sections": [
+    {
+      "heading": "Which visa do you need",
+      "body": "- **L** — tourism and visiting friends.\n- **M** — business trips, trade fairs, sourcing (invitation required).\n- **X1** — study longer than 180 days (admission letter + JW202 form).\n- **X2** — short-term study and language courses up to 180 days.\n- **Q / S** — visiting relatives living in China."
+    }
+  ],
+  "documents": [
+    "Passport valid at least 6 months with blank pages",
+    "Photo meeting the visa centre’s requirements",
+    "Printed and signed application form",
+    "Bookings or invitation — depending on visa type",
+    "For study: admission letter and JW202",
+    "Copies of previous Chinese visas (if any)"
+  ],
+  "steps": [
+    {
+      "title": "Consultation",
+      "text": "We determine the visa category and timeline."
+    },
+    {
+      "title": "Documents and form",
+      "text": "We complete the form and prepare bookings or the invitation."
+    },
+    {
+      "title": "Submission",
+      "text": "We book the visa centre and check the package before you submit."
+    },
+    {
+      "title": "Visa pickup",
+      "text": "We let you know when it is ready and help with entry questions."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How long does a China visa take?",
+      "a": "Usually a few working days; express processing is available for an extra fee. We confirm exact timing at submission."
+    },
+    {
+      "q": "Do I need an invitation for a business visa?",
+      "a": "Yes, an M visa requires an invitation from the host company in China. We tell you what it must contain."
+    },
+    {
+      "q": "Can I study in China on a tourist visa?",
+      "a": "No. Study requires an X1 or X2 student visa. If you apply through us, we handle everything from admission to the visa."
+    }
+  ],
+  "seo_description": "China visa from Bishkek: L tourist, M business, X1/X2 student. Application form, invitation and submission.",
+  "flag": "cn",
+  "order": 3,
+  "accent": "#de2910",
+  "image": "",
+  "published": true
+}

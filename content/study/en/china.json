@@ -1,0 +1,96 @@
+{
+  "slug": "china",
+  "title": "Study in China",
+  "country": "China",
+  "nav_title": "China",
+  "tagline": "Language year, bachelor’s and master’s degrees. Chinese Government Scholarship (CSC).",
+  "chips": [
+    "Language year",
+    "Bachelor’s",
+    "Master’s",
+    "CSC scholarship"
+  ],
+  "facts": [
+    {
+      "label": "Intakes",
+      "value": "September (some programs — March)"
+    },
+    {
+      "label": "Language of study",
+      "value": "Chinese (HSK) or English"
+    },
+    {
+      "label": "Scholarships",
+      "value": "CSC, provincial, university"
+    },
+    {
+      "label": "Visa",
+      "value": "X1 / X2 (JW202)"
+    }
+  ],
+  "intro": "China is one of Asia’s leading destinations for international students. Chinese language skills open careers in trade, logistics and international business, and scholarships make study affordable.\n\nWe shortlist universities, help you apply for the CSC scholarship and obtain the student visa.",
+  "services": [
+    "University and program selection",
+    "Language year to learn Chinese",
+    "**CSC** and university scholarship applications",
+    "Document preparation, medical form",
+    "Admission letter and **JW202** form",
+    "X1 / X2 student visa"
+  ],
+  "sections": [
+    {
+      "heading": "Programs",
+      "body": "**Language year.** Intensive Chinese — ideal for beginners and HSK preparation.\n\n**Bachelor’s and master’s.** Taught in Chinese (usually HSK 4–5) or in English for some programs."
+    },
+    {
+      "heading": "CSC scholarship",
+      "body": "The **Chinese Government Scholarship (CSC)** can cover tuition, accommodation, insurance and a monthly stipend. Applications usually open early in the year — prepare in advance."
+    }
+  ],
+  "documents": [
+    "Passport",
+    "School certificate/diploma, translated and notarized",
+    "HSK or IELTS/TOEFL certificate (depending on the program)",
+    "Study plan / motivation letter",
+    "Recommendation letters (for master’s)",
+    "Foreigner physical examination form"
+  ],
+  "steps": [
+    {
+      "title": "Consultation",
+      "text": "We choose the university, language of study and scholarship."
+    },
+    {
+      "title": "Documents",
+      "text": "We prepare translations, the study plan and the medical form."
+    },
+    {
+      "title": "Application",
+      "text": "We apply to the university and for the scholarship."
+    },
+    {
+      "title": "X1/X2 visa",
+      "text": "We obtain the JW202 and the visa."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can I apply without Chinese?",
+      "a": "Yes — through a language year or English-taught programs."
+    },
+    {
+      "q": "What does the CSC scholarship cover?",
+      "a": "A full scholarship usually includes tuition, dormitory, medical insurance and a monthly stipend. Terms depend on the scholarship type."
+    },
+    {
+      "q": "When should I apply?",
+      "a": "September intakes usually open in winter, and scholarships early in the year. Start preparing 6–9 months ahead."
+    }
+  ],
+  "seo_description": "Study in China for students from Kyrgyzstan: language year, bachelor’s, master’s, CSC scholarship, X1/X2 visa.",
+  "flag": "cn",
+  "order": 6,
+  "accent": "#de2910",
+  "image": "",
+  "published": true
+}

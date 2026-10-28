@@ -1,0 +1,96 @@
+{
+  "slug": "italy",
+  "title": "Study in Italy",
+  "country": "Italy",
+  "nav_title": "Italy",
+  "tagline": "Public universities with English-taught programs and regional DSU scholarships.",
+  "chips": [
+    "Bachelor’s",
+    "Master’s",
+    "DSU scholarships",
+    "English-taught programs"
+  ],
+  "facts": [
+    {
+      "label": "Intakes",
+      "value": "September–October"
+    },
+    {
+      "label": "Language of study",
+      "value": "English or Italian"
+    },
+    {
+      "label": "Scholarships",
+      "value": "Regional DSU, university scholarships"
+    },
+    {
+      "label": "Visa",
+      "value": "National study visa (D)"
+    }
+  ],
+  "intro": "Italy attracts students with affordable public universities, many English-taught programs and regional scholarships based on family income.\n\nWe shortlist programs, manage applications, and help with pre-enrollment, the scholarship and the national D visa.",
+  "services": [
+    "Shortlisting universities and English-taught programs",
+    "Applications and pre-enrollment",
+    "Translation and legalization of documents, diploma evaluation",
+    "Regional **DSU** scholarship application",
+    "National D visa documents",
+    "Advice on housing and first steps after arrival"
+  ],
+  "sections": [
+    {
+      "heading": "How admission works",
+      "body": "Admission usually has several stages: the university application, pre-enrollment via the national portal, recognition of your education documents and the visa. Some programs (such as medicine) have entrance tests.\n\nDeadlines vary by university — many open applications as early as winter and spring."
+    },
+    {
+      "heading": "DSU scholarships",
+      "body": "Regional **DSU** scholarships are awarded based on family income and can cover housing and meals and waive tuition. The application requires translated and legalized documents on family income and assets. We help you prepare this package."
+    }
+  ],
+  "documents": [
+    "Passport",
+    "School certificate/diploma, translated and legalized",
+    "IELTS/TOEFL or Italian language certificate",
+    "Motivation letter and CV",
+    "Family income documents — for the DSU scholarship",
+    "Proof of funds and accommodation — for the visa"
+  ],
+  "steps": [
+    {
+      "title": "Consultation",
+      "text": "We shortlist programs and check deadlines."
+    },
+    {
+      "title": "Applications",
+      "text": "We prepare documents and apply to universities."
+    },
+    {
+      "title": "Pre-enrollment",
+      "text": "We complete pre-enrollment and document recognition."
+    },
+    {
+      "title": "Scholarship and visa",
+      "text": "We apply for DSU and obtain the D visa."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do I need Italian?",
+      "a": "Not for English-taught programs — IELTS or TOEFL is enough. Basic Italian does make daily life much easier."
+    },
+    {
+      "q": "Can I study in Italy for free?",
+      "a": "With a DSU scholarship many students are exempt from tuition and receive living support. Eligibility depends on family income."
+    },
+    {
+      "q": "When should I start preparing?",
+      "a": "Ideally 8–12 months before classes start: many universities open admissions early and paperwork takes time."
+    }
+  ],
+  "seo_description": "Study in Italy for students from Kyrgyzstan: English-taught programs, pre-enrollment, DSU scholarship, national D visa.",
+  "flag": "it",
+  "order": 4,
+  "accent": "#009246",
+  "image": "",
+  "published": true
+}

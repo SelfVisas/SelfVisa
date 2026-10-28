@@ -1,0 +1,100 @@
+{
+  "slug": "usa",
+  "title": "Study in the USA",
+  "country": "USA",
+  "nav_title": "USA",
+  "tagline": "Universities, colleges and language schools. Help with scholarships and the F-1 visa.",
+  "chips": [
+    "Bachelor’s",
+    "Master’s",
+    "Community college",
+    "Language courses"
+  ],
+  "facts": [
+    {
+      "label": "Intakes",
+      "value": "Fall (Aug–Sep), Spring (Jan)"
+    },
+    {
+      "label": "English test",
+      "value": "TOEFL, IELTS or Duolingo"
+    },
+    {
+      "label": "Funding",
+      "value": "University merit scholarships"
+    },
+    {
+      "label": "Visa",
+      "value": "F-1 (I-20, SEVIS)"
+    }
+  ],
+  "intro": "A US education is valued worldwide, and the flexible system lets you choose a path that fits your budget: start at a community college and transfer, or go straight into a bachelor’s or master’s program.\n\nWe shortlist schools, prepare essays and documents, help you win scholarships and obtain your I-20, and then the F-1 visa.",
+  "services": [
+    "Shortlisting universities and colleges within budget",
+    "Essays, motivation letters and recommendations",
+    "Applications via university portals and Common App",
+    "Finding scholarships and discounts",
+    "Obtaining the **I-20** and paying SEVIS",
+    "DS-160 and **F-1** visa interview preparation"
+  ],
+  "sections": [
+    {
+      "heading": "Study options",
+      "body": "- **Bachelor’s** — 4 years, the first two include general education.\n- **Community college** — 2 years, lower cost, then transfer to a university.\n- **Master’s** — 1–2 years, requires a bachelor’s degree.\n- **Language programs** — intensive English before your main studies."
+    },
+    {
+      "heading": "Scholarships",
+      "body": "Most scholarships for international students come from universities themselves — for grades, test scores and achievements. A strong essay and a well-chosen list of schools make a real difference to the discount you receive."
+    }
+  ],
+  "documents": [
+    "Passport",
+    "School certificate/diploma with grades and translation",
+    "TOEFL, IELTS or Duolingo certificate",
+    "Essays and recommendation letters",
+    "Proof of funds (bank statement / sponsor)",
+    "For the visa: I-20, SEVIS receipt, DS-160"
+  ],
+  "steps": [
+    {
+      "title": "Strategy",
+      "text": "We assess your profile and build a list of schools."
+    },
+    {
+      "title": "Essays and documents",
+      "text": "We write essays and collect recommendations and documents."
+    },
+    {
+      "title": "Applications",
+      "text": "We apply and track deadlines."
+    },
+    {
+      "title": "Admission and I-20",
+      "text": "We choose the best offer and obtain the I-20."
+    },
+    {
+      "title": "F-1 visa",
+      "text": "DS-160, SEVIS, interview preparation."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can I study in the USA for free?",
+      "a": "Full scholarships exist but are extremely competitive. It is more realistic to aim for partial scholarships and choose schools that are generous to international students."
+    },
+    {
+      "q": "Do I need the SAT?",
+      "a": "Many universities are test-optional, but a good score can help with scholarships. We decide based on your profile."
+    },
+    {
+      "q": "Can I work while studying?",
+      "a": "F-1 students can work on campus with an hour limit. Off-campus work is only possible with special authorization."
+    }
+  ],
+  "seo_description": "Study in the USA for students from Kyrgyzstan: bachelor’s, master’s, community college, scholarships, I-20 and F-1 visa.",
+  "flag": "us",
+  "order": 2,
+  "accent": "#3c3b6e",
+  "image": "",
+  "published": true
+}

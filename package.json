@@ -1,0 +1,16 @@
+{
+  "name": "selfkg",
+  "version": "1.0.0",
+  "description": "Сайт SELF.KG — SelfVisa & SelfAcademy",
+  "scripts": {
+    "build": "node build.js",
+    "preview": "PREVIEW=1 node build.js"
+  },
+  "dependencies": {
+    "marked": "^14.1.4"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  }
+}

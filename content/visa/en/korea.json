@@ -1,0 +1,91 @@
+{
+  "slug": "korea",
+  "title": "South Korea visa",
+  "country": "South Korea",
+  "nav_title": "South Korea",
+  "tagline": "Short-term visas for tourism and business, D-2 and D-4 student visas.",
+  "chips": [
+    "C-3 — short-term",
+    "D-4 — language courses",
+    "D-2 — university"
+  ],
+  "facts": [
+    {
+      "label": "Visa types",
+      "value": "C-3, D-4, D-2"
+    },
+    {
+      "label": "Where to apply",
+      "value": "Embassy of the Republic of Korea in Bishkek"
+    },
+    {
+      "label": "Appointment",
+      "value": "We help you book a submission slot"
+    },
+    {
+      "label": "Service fee",
+      "value": "Ask us on WhatsApp"
+    }
+  ],
+  "intro": "Korea is our core destination: we handle both visas and admission to Korean universities. We know how embassy appointments work, which documents are checked most closely and where applicants most often slip up.\n\nFor students we provide full support — from the admission letter to the D-4 or D-2 visa.",
+  "services": [
+    "C-3 short-term visa for tourism, family visits and business",
+    "**D-4** (language courses) and **D-2** (bachelor’s, master’s) student visas",
+    "Application form, review of financial documents and translations",
+    "Booking the embassy submission",
+    "Invitation letters — advice on content",
+    "Admission + visa bundle for SelfAcademy students"
+  ],
+  "sections": [
+    {
+      "heading": "D-4 and D-2 student visas",
+      "body": "**D-4** is issued for studying Korean at a university language institute. **D-2** is for bachelor’s, master’s or doctoral study.\n\nBoth require a Certificate of Admission, proof of funds and education documents with translation and apostille. We check the package before submission to avoid it being returned."
+    }
+  ],
+  "documents": [
+    "Passport",
+    "Visa application form and 3.5×4.5 cm photo",
+    "Employment/study letter and bank statement",
+    "For D-2/D-4: Certificate of Admission, apostilled education document",
+    "Proof of tuition payment and funds",
+    "Invitation — for visitor and business visas"
+  ],
+  "steps": [
+    {
+      "title": "Consultation",
+      "text": "We match the visa category to your purpose."
+    },
+    {
+      "title": "Documents",
+      "text": "We assemble and check the package, translations and apostilles."
+    },
+    {
+      "title": "Booking and submission",
+      "text": "We book the embassy and support your submission."
+    },
+    {
+      "title": "Visa",
+      "text": "We receive the decision and prepare you for the trip."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do Kyrgyz citizens need a visa for Korea?",
+      "a": "Yes, citizens of Kyrgyzstan need a visa to travel to South Korea."
+    },
+    {
+      "q": "Can I join a language course without knowing Korean?",
+      "a": "Yes. D-4 language programs accept complete beginners, and afterwards you can enter a university on a D-2 visa."
+    },
+    {
+      "q": "How long does a student visa take?",
+      "a": "It depends on the embassy’s workload and the intake season. Apply early before the spring and autumn semesters."
+    }
+  ],
+  "seo_description": "South Korea visa from Bishkek: C-3, D-4 and D-2 student visas. Documents, embassy booking and support.",
+  "flag": "kr",
+  "order": 4,
+  "accent": "#cd2e3a",
+  "image": "",
+  "published": true
+}

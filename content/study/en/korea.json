@@ -1,0 +1,105 @@
+{
+  "slug": "korea",
+  "title": "Study in South Korea",
+  "country": "South Korea",
+  "nav_title": "South Korea",
+  "tagline": "Language courses, bachelor’s and master’s degrees at Korean universities. GKS and university scholarships.",
+  "chips": [
+    "Language courses (D-4)",
+    "Bachelor’s",
+    "Master’s",
+    "GKS scholarship"
+  ],
+  "facts": [
+    {
+      "label": "Intakes",
+      "value": "March and September"
+    },
+    {
+      "label": "Language of study",
+      "value": "Korean or English"
+    },
+    {
+      "label": "Scholarships",
+      "value": "GKS, TOPIK-based discounts"
+    },
+    {
+      "label": "Visa",
+      "value": "D-4 (language), D-2 (degree)"
+    }
+  ],
+  "intro": "South Korea is SelfAcademy’s core destination. We help students from Kyrgyzstan and Central Asia get into Korean language programs and universities, win scholarships and obtain student visas.\n\nWe work with admissions to Sejong, Dankook, Woosong, Chungbuk, Jeonbuk, Keimyung and other universities — matching the program to your language level, grades and budget.",
+  "services": [
+    "University and program selection",
+    "Admission to university language institutes",
+    "Motivation letters and study plans",
+    "Document preparation: translations, apostille, finances",
+    "Scholarships: **GKS** and **TOPIK**-based tuition discounts",
+    "D-4 / D-2 student visa and pre-departure preparation"
+  ],
+  "sections": [
+    {
+      "heading": "Study programs",
+      "body": "**Language courses (D-4).** Ideal for beginners. Courses run by semester at university language institutes; afterwards you can enter a bachelor’s program at the same university.\n\n**Bachelor’s.** 4 years. Taught in Korean (usually TOPIK 3 or higher) or in English for some majors.\n\n**Master’s.** 2 years. Many English-taught programs, especially in engineering, IT and business."
+    },
+    {
+      "heading": "Scholarships and discounts",
+      "body": "**Global Korea Scholarship (GKS)** is a government scholarship covering tuition, living costs and airfare. Competition is strong, so documents are prepared well in advance.\n\nMany universities also offer **tuition discounts based on TOPIK level** and grades. We will tell you what you can apply for."
+    },
+    {
+      "heading": "Working while studying",
+      "body": "International students may legally work a limited number of hours per week once they receive permission. It helps with living costs but does not replace financial preparation for the move."
+    }
+  ],
+  "documents": [
+    "Passport",
+    "School certificate or diploma with transcript, translated and apostilled",
+    "TOPIK or IELTS/TOEFL certificate (if available)",
+    "Bank statement (proof of funds)",
+    "Motivation letter and study plan",
+    "Photo and university application form"
+  ],
+  "documents_note": "Requirements vary by university — we prepare the list for your chosen program.",
+  "steps": [
+    {
+      "title": "Consultation",
+      "text": "We assess grades, language and budget and propose 3–5 options."
+    },
+    {
+      "title": "Documents",
+      "text": "We prepare translations, apostille and the motivation letter."
+    },
+    {
+      "title": "Application",
+      "text": "We apply and handle correspondence with the university."
+    },
+    {
+      "title": "Admission and payment",
+      "text": "We receive the Certificate of Admission and invoice."
+    },
+    {
+      "title": "Visa and departure",
+      "text": "We obtain the D-4 / D-2 visa and prepare you to fly."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can I apply without knowing Korean?",
+      "a": "Yes — through language courses (D-4) or English-taught bachelor’s and master’s programs."
+    },
+    {
+      "q": "When should I start preparing?",
+      "a": "Ideally 6–9 months before the semester. Applications for the March intake usually close in autumn, for September — in spring."
+    },
+    {
+      "q": "How much does it cost to study in Korea?",
+      "a": "It depends on the university, city and program. We will find options within your budget and explain available discounts."
+    }
+  ],
+  "seo_description": "Study in South Korea for students from Kyrgyzstan: language courses, bachelor’s, master’s, GKS scholarship, D-4 and D-2 visas.",
+  "flag": "kr",
+  "order": 1,
+  "accent": "#cd2e3a",
+  "image": "",
+  "published": true
+}

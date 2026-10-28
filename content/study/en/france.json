@@ -1,0 +1,96 @@
+{
+  "slug": "france",
+  "title": "Study in France",
+  "country": "France",
+  "nav_title": "France",
+  "tagline": "Public universities and business schools. Programs in French and English.",
+  "chips": [
+    "Bachelor’s (Licence)",
+    "Master’s",
+    "Business schools",
+    "French language"
+  ],
+  "facts": [
+    {
+      "label": "Intakes",
+      "value": "September (some programs — January)"
+    },
+    {
+      "label": "Language of study",
+      "value": "French (DELF/DALF) or English"
+    },
+    {
+      "label": "Scholarships",
+      "value": "Eiffel, university scholarships"
+    },
+    {
+      "label": "Visa",
+      "value": "Long-stay student visa"
+    }
+  ],
+  "intro": "France combines strong public universities with affordable tuition and renowned business schools. You can study in French or choose an English-taught program — especially at master’s level.\n\nWe shortlist programs, help with motivation letters and documents, and prepare you for the student visa.",
+  "services": [
+    "Choosing a university, school or language course",
+    "Motivation letters and CV in French/English",
+    "Preparing and translating documents",
+    "Applying to selected institutions",
+    "Finding scholarships",
+    "Student visa and housing documents"
+  ],
+  "sections": [
+    {
+      "heading": "Education system",
+      "body": "The French system follows **Licence (3 years) — Master (2 years) — Doctorat**. Public universities offer a wide range of fields; business and engineering schools (grandes écoles) offer more practical and usually more expensive programs."
+    },
+    {
+      "heading": "Language",
+      "body": "French-taught programs usually require DELF/DALF. English-taught programs require IELTS or TOEFL. If your French needs work, start with a language course in France."
+    }
+  ],
+  "documents": [
+    "Passport",
+    "School certificate/diploma translated into French",
+    "DELF/DALF or IELTS/TOEFL certificate",
+    "Motivation letter and CV",
+    "Proof of funds",
+    "Admission letter — for the visa"
+  ],
+  "steps": [
+    {
+      "title": "Consultation",
+      "text": "We choose the level, language and type of institution."
+    },
+    {
+      "title": "Documents",
+      "text": "Translations, motivation letter, CV."
+    },
+    {
+      "title": "Applications",
+      "text": "We apply and follow up on responses."
+    },
+    {
+      "title": "Visa",
+      "text": "We prepare the student visa package."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can I study in France in English?",
+      "a": "Yes, especially at master’s level and in business schools. There are fewer English-taught bachelor’s programs."
+    },
+    {
+      "q": "Is studying in France expensive?",
+      "a": "Public universities are relatively affordable by European standards; private schools cost noticeably more. We find options within your budget."
+    },
+    {
+      "q": "Can I work while studying?",
+      "a": "Yes, students may work a limited number of hours per year, which helps cover part of the costs."
+    }
+  ],
+  "seo_description": "Study in France for students from Kyrgyzstan: universities, business schools, French and English programs, student visa.",
+  "flag": "fr",
+  "order": 3,
+  "accent": "#0055a4",
+  "image": "",
+  "published": true
+}

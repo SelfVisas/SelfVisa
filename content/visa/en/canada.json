@@ -1,0 +1,91 @@
+{
+  "slug": "canada",
+  "title": "Canada visa",
+  "country": "Canada",
+  "nav_title": "Canada",
+  "tagline": "Visitor visa (TRV) and Study Permit. Online application.",
+  "chips": [
+    "TRV — tourism & visiting",
+    "Study Permit",
+    "Online application"
+  ],
+  "facts": [
+    {
+      "label": "Types",
+      "value": "Visitor visa (TRV), Study Permit"
+    },
+    {
+      "label": "Application",
+      "value": "Online, via an IRCC account"
+    },
+    {
+      "label": "Biometrics",
+      "value": "At a Canada visa centre (nearest: Almaty)"
+    },
+    {
+      "label": "Service fee",
+      "value": "Ask us on WhatsApp"
+    }
+  ],
+  "intro": "Canadian visas are applied for online and decided on paper, without an interview. Everything depends on how convincing the application is — finances, purpose of travel, ties to home and the cover letter.\n\nWe handle the entire application: from creating the account to uploading documents and booking biometrics.",
+  "services": [
+    "Creating and managing your IRCC account",
+    "Completing the online forms",
+    "Letter of Explanation",
+    "Reviewing financial documents and translations",
+    "Booking the biometrics appointment",
+    "Study Permit for students: acceptance letter, funds, study plan"
+  ],
+  "sections": [
+    {
+      "heading": "Why the letter of explanation matters",
+      "body": "The officer never meets you — they only see documents. A well-written letter ties the documents into one story: why you are travelling, who pays and why you will return. We write it in English based on your documents."
+    }
+  ],
+  "documents": [
+    "Passport",
+    "Digital photo",
+    "Bank statement and employment letter",
+    "Family and property documents",
+    "Travel plan or invitation",
+    "For study: Letter of Acceptance and proof of funds"
+  ],
+  "steps": [
+    {
+      "title": "Consultation",
+      "text": "We assess your profile and choose a strategy."
+    },
+    {
+      "title": "Account and forms",
+      "text": "We create the IRCC account and complete the forms."
+    },
+    {
+      "title": "Documents and letter",
+      "text": "We prepare translations and the letter, then upload the package."
+    },
+    {
+      "title": "Biometrics and decision",
+      "text": "We book biometrics and track the application status."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is there an interview?",
+      "a": "No, the decision is based on documents. You only need to give biometrics (fingerprints and photo) in person at a visa centre."
+    },
+    {
+      "q": "How long does processing take?",
+      "a": "Times change and depend on the country and application type. Current times are published on the Government of Canada website — we check them before applying."
+    },
+    {
+      "q": "Can I apply for study and a visitor visa at the same time?",
+      "a": "They are separate applications with different purposes. We will advise which one fits your situation."
+    }
+  ],
+  "seo_description": "Canada visa from Bishkek: TRV visitor visa and Study Permit. Online application, letter of explanation, biometrics.",
+  "flag": "ca",
+  "order": 6,
+  "accent": "#d52b1e",
+  "image": "",
+  "published": true
+}

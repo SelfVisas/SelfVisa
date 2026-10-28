@@ -1,0 +1,97 @@
+{
+  "seo_title": "SELF — visas and study abroad from Bishkek | SelfVisa & SelfAcademy",
+  "seo_description": "Visas to the USA, Europe, China, Korea, Japan and Canada. University admission in Korea, the USA, France, Italy, Malaysia and China. Office in Bishkek.",
+  "hero_badge": "SelfVisa · SelfAcademy · Bishkek",
+  "hero_title": "Visas and study abroad — **without the guesswork**",
+  "hero_subtitle": "We prepare visa documents, complete application forms, choose the right university and support you until the visa is issued and you are enrolled.",
+  "stats": [
+    {
+      "value": "6",
+      "label": "visa destinations"
+    },
+    {
+      "value": "6",
+      "label": "study destinations"
+    },
+    {
+      "value": "RU · KG · EN",
+      "label": "consultations in three languages"
+    }
+  ],
+  "visa_heading": "Visas",
+  "visa_text": "Tourist, visitor, business and student visas. We complete forms, assemble the document package and prepare you for the interview.",
+  "study_heading": "Study abroad",
+  "study_text": "Language courses, bachelor’s and master’s degrees. University selection, documents, scholarships and the student visa.",
+  "visa_grid_heading": "Visa services",
+  "study_grid_heading": "University admission abroad",
+  "about_heading": "We make complex processes clear",
+  "about_text": "SELF brings together two services: **SelfVisa** — visa consulting, and **SelfAcademy** — education abroad.\n\nWe work with citizens of Kyrgyzstan and other Central Asian countries: we review your situation, give an honest assessment, prepare documents and explain every step. The visa decision is made by the embassy — our job is to make sure your application is complete, accurate and consistent.",
+  "advantages": [
+    {
+      "title": "Error-free forms",
+      "text": "DS-160, DS-5535, I-134, Schengen and Asian visa forms — completed and cross-checked against your documents."
+    },
+    {
+      "title": "Interview preparation",
+      "text": "We go through typical consular questions and help you explain the purpose of your trip with confidence."
+    },
+    {
+      "title": "End-to-end admission",
+      "text": "Program selection, motivation letters, scholarships, enrollment and the student visa."
+    },
+    {
+      "title": "Transparent",
+      "text": "We tell you upfront what is included, what it costs and which timelines are realistic."
+    }
+  ],
+  "steps_heading": "Four steps to the result",
+  "steps": [
+    {
+      "title": "Consultation",
+      "text": "We discuss your goal, documents and timeline, and give an honest assessment."
+    },
+    {
+      "title": "Documents",
+      "text": "You get an exact checklist; we review every document and complete the forms."
+    },
+    {
+      "title": "Submission",
+      "text": "We book your submission or interview and prepare you for the questions."
+    },
+    {
+      "title": "Result",
+      "text": "We stay in touch until the visa is issued or you are enrolled."
+    }
+  ],
+  "reviews_eyebrow": "Reviews",
+  "reviews_heading": "What our clients say",
+  "reviews": [],
+  "faq": [
+    {
+      "q": "Do you guarantee a visa?",
+      "a": "No. Only the embassy or consulate makes the decision, and no honest agency can guarantee it. We guarantee a well-prepared application and thorough interview preparation."
+    },
+    {
+      "q": "Can I get a consultation online?",
+      "a": "Yes. Message us on WhatsApp — we consult online in Russian, Kyrgyz and English."
+    },
+    {
+      "q": "How much do your services cost?",
+      "a": "It depends on the country and the type of visa or study program. Message us and we will quote an exact price after a short consultation."
+    },
+    {
+      "q": "Do you work with citizens of other countries?",
+      "a": "Yes, we advise citizens of Kyrgyzstan and other Central Asian countries. Requirements depend on citizenship — we will clarify during the consultation."
+    }
+  ],
+  "form_heading": "Get a free consultation",
+  "form_text": "Leave your contacts and choose a destination — the request opens in WhatsApp. We reply during working hours.",
+  "form_other_options": [
+    "Green Card (DV Lottery)",
+    "Other"
+  ],
+  "address": "140/3 Bakaev St., 2nd floor, office 202, Bishkek",
+  "hours": "Mon–Sat: 10:00–18:00",
+  "footer_text": "Visa consulting and education abroad. Bishkek, Kyrgyzstan.",
+  "ui": {}
+}

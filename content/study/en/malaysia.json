@@ -1,0 +1,96 @@
+{
+  "slug": "malaysia",
+  "title": "Study in Malaysia",
+  "country": "Malaysia",
+  "nav_title": "Malaysia",
+  "tagline": "English-taught programs, branch campuses of UK and Australian universities, affordable living costs.",
+  "chips": [
+    "Foundation",
+    "Bachelor’s",
+    "Master’s",
+    "Taught in English"
+  ],
+  "facts": [
+    {
+      "label": "Intakes",
+      "value": "Several per year"
+    },
+    {
+      "label": "Language of study",
+      "value": "English"
+    },
+    {
+      "label": "Highlight",
+      "value": "UK and Australian university campuses"
+    },
+    {
+      "label": "Visa",
+      "value": "Student Pass (via EMGS)"
+    }
+  ],
+  "intro": "Malaysia offers an English-taught education and an internationally recognised degree for less than the UK or Australia. Foreign university campuses and strong local universities operate here, with several intakes a year.\n\nWe choose the program and handle admission and your Student Pass.",
+  "services": [
+    "University and program selection",
+    "Foundation programs for school graduates",
+    "Applications and offer letter",
+    "Student Pass via EMGS",
+    "Medical check-up and entry documents",
+    "Advice on housing and living costs"
+  ],
+  "sections": [
+    {
+      "heading": "Why Malaysia",
+      "body": "- Fully **English-taught** programs.\n- **Foreign university campuses** — a degree from the home university.\n- Several **intakes a year** — no need to wait for September.\n- Affordable **cost of living** and a pleasant climate.\n- A convenient base for travelling around Asia."
+    },
+    {
+      "heading": "Foundation",
+      "body": "School graduates from Kyrgyzstan usually start with a **Foundation** program (about one year) and then enter the first year of a bachelor’s degree."
+    }
+  ],
+  "documents": [
+    "Passport (valid for the full study period plus margin)",
+    "School certificate/diploma with translation",
+    "IELTS/TOEFL (some programs accept an internal test)",
+    "Photo and application form",
+    "Medical check — as required by EMGS",
+    "Proof of funds (if required by the university)"
+  ],
+  "steps": [
+    {
+      "title": "Consultation",
+      "text": "We choose a program and the nearest intake."
+    },
+    {
+      "title": "Application",
+      "text": "We submit documents and obtain the offer letter."
+    },
+    {
+      "title": "Student Pass",
+      "text": "We process the pass through EMGS."
+    },
+    {
+      "title": "Departure",
+      "text": "We prepare you for the flight and your first days."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is a branch campus degree recognised?",
+      "a": "Foreign university campuses usually award the home university’s degree. We confirm this for each specific program."
+    },
+    {
+      "q": "Do I need IELTS?",
+      "a": "Most programs require IELTS or TOEFL, but some universities accept their own test or offer English preparation."
+    },
+    {
+      "q": "When can I start?",
+      "a": "Many universities have several intakes a year, so you can start without a long wait."
+    }
+  ],
+  "seo_description": "Study in Malaysia for students from Kyrgyzstan: English-taught programs, foreign university campuses, Foundation, Student Pass.",
+  "flag": "my",
+  "order": 5,
+  "accent": "#010066",
+  "image": "",
+  "published": true
+}

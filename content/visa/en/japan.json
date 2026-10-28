@@ -1,0 +1,91 @@
+{
+  "slug": "japan",
+  "title": "Japan visa",
+  "country": "Japan",
+  "nav_title": "Japan",
+  "tagline": "Short-term visa for tourism, family visits and business trips.",
+  "chips": [
+    "Tourism",
+    "Visiting",
+    "Business"
+  ],
+  "facts": [
+    {
+      "label": "Visa type",
+      "value": "Temporary visitor"
+    },
+    {
+      "label": "Where to apply",
+      "value": "Embassy of Japan in Bishkek"
+    },
+    {
+      "label": "Key document",
+      "value": "Detailed itinerary"
+    },
+    {
+      "label": "Service fee",
+      "value": "Ask us on WhatsApp"
+    }
+  ],
+  "intro": "The Embassy of Japan looks closely at your travel plan: where you will be each day, who pays for the trip and how you are tied to Kyrgyzstan.\n\nWe build a clear day-by-day itinerary, help with documents from an inviting party (if any) and review your financial documents.",
+  "services": [
+    "Day-by-day schedule of stay",
+    "Completing the visa application form",
+    "Hotel and flight reservations",
+    "Advice on the inviting party’s documents",
+    "Reviewing financial documents",
+    "Preparing the package for submission"
+  ],
+  "sections": [
+    {
+      "heading": "Tourist and visitor visas",
+      "body": "For tourism, the application rests on the itinerary and bookings. For family or business visits you need documents from the inviting party in Japan: an invitation letter, a letter of guarantee and a schedule of stay. We tell you which forms to request and how to fill them in correctly."
+    }
+  ],
+  "documents": [
+    "Passport",
+    "Application form and 4.5×4.5 cm photo",
+    "Day-by-day schedule of stay",
+    "Hotel and flight reservations",
+    "Employment letter and bank statement",
+    "Invitation and letter of guarantee — for visitor/business visas"
+  ],
+  "steps": [
+    {
+      "title": "Consultation",
+      "text": "We define the purpose and the required documents."
+    },
+    {
+      "title": "Itinerary and bookings",
+      "text": "We build the daily plan and make reservations."
+    },
+    {
+      "title": "Form and review",
+      "text": "We complete the form and check the package."
+    },
+    {
+      "title": "Submission",
+      "text": "You submit at the embassy; we stay in touch until the decision."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How long does a Japan visa take?",
+      "a": "Usually about a week after submission, but some cases take longer. Apply at least a month before travel."
+    },
+    {
+      "q": "Do I need an invitation for tourism?",
+      "a": "No — for a tourist trip the itinerary, bookings and financial documents are enough."
+    },
+    {
+      "q": "Can I study in Japan?",
+      "a": "Study requires a student visa issued on the basis of a Certificate of Eligibility (CoE) from the school. Message us and we will suggest options."
+    }
+  ],
+  "seo_description": "Japan visa from Bishkek: tourist, visitor and business. Itinerary, bookings, application form and document review.",
+  "flag": "jp",
+  "order": 5,
+  "accent": "#bc002d",
+  "image": "",
+  "published": true
+}

@@ -1,0 +1,101 @@
+{
+  "slug": "usa",
+  "title": "US visa",
+  "country": "USA",
+  "nav_title": "USA",
+  "tagline": "B1/B2 tourist, visitor and business visas, F-1 student visas and J-1 exchange programs.",
+  "chips": [
+    "B1/B2 — tourism & business",
+    "F-1 — study",
+    "J-1 — exchange",
+    "Green Card (DV)"
+  ],
+  "facts": [
+    {
+      "label": "Visa types",
+      "value": "B1/B2, F-1, J-1"
+    },
+    {
+      "label": "Interview",
+      "value": "U.S. Embassy in Bishkek"
+    },
+    {
+      "label": "Forms",
+      "value": "DS-160, DS-5535, I-134"
+    },
+    {
+      "label": "Service fee",
+      "value": "Ask us on WhatsApp"
+    }
+  ],
+  "intro": "A US visa always involves an interview with a consular officer. The decision takes minutes, so your DS-160, your documents and the way you describe your trip must match in every detail.\n\nWe complete the form, help with additional forms (DS-5535, I-134 for a sponsor), book the interview and prepare you for the officer’s questions.",
+  "services": [
+    "Completing the **DS-160** in English",
+    "Supplemental **DS-5535** questionnaire when requested",
+    "**I-134** and the sponsor’s document package",
+    "Paying the consular fee and booking the interview",
+    "Interview preparation: typical questions and answer review",
+    "Help with the **Green Card (DV Lottery)** entry during the registration period"
+  ],
+  "sections": [
+    {
+      "heading": "Which visa do you need",
+      "body": "- **B1/B2** — tourism, medical treatment, visiting relatives, business meetings and conferences.\n- **F-1** — study at a US university, college or language school. Requires a Form I-20 from the school.\n- **J-1** — exchange programs: Work & Travel, internships, academic exchange. Requires a Form DS-2019.\n\nIf your purpose is mixed, we will tell you which category fits — choosing the wrong visa is a common reason for refusal."
+    },
+    {
+      "heading": "Why visas are refused and how to avoid it",
+      "body": "The most common reason is that the officer is not convinced the applicant will return home (section 214(b)). Strong ties to Kyrgyzstan help — work, study, family, property, travel history — along with a consistent story at the interview.\n\nWe review weak points in advance and tell you honestly whether to apply now or strengthen your profile first."
+    }
+  ],
+  "documents": [
+    "Passport valid at least 6 months beyond your stay",
+    "Digital photo meeting State Department requirements (5×5 cm)",
+    "Fee payment and appointment confirmation",
+    "Employment or study letter, bank statement",
+    "Family and property documents (as applicable)",
+    "For F-1 / J-1: Form I-20 or DS-2019 and the SEVIS fee receipt"
+  ],
+  "documents_note": "The exact list depends on your purpose of travel — you get a personal checklist after the consultation.",
+  "steps": [
+    {
+      "title": "Consultation and visa choice",
+      "text": "We review your purpose and profile and assess risks."
+    },
+    {
+      "title": "DS-160 form",
+      "text": "Completed in English and checked against your documents."
+    },
+    {
+      "title": "Fee and appointment",
+      "text": "We pay the fee and choose an interview date."
+    },
+    {
+      "title": "Interview preparation",
+      "text": "We rehearse the officer’s questions and the order of documents."
+    },
+    {
+      "title": "Interview and passport",
+      "text": "Once approved, your passport with the visa is returned by courier or at a pickup point."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How long is the wait for an interview?",
+      "a": "It depends on the embassy’s workload and changes during the year. We check current dates when booking."
+    },
+    {
+      "q": "What is the DS-5535?",
+      "a": "A supplemental questionnaire the officer may request after the interview: travel history, addresses, employment and social media for recent years. We help you complete it quickly and consistently with your DS-160."
+    },
+    {
+      "q": "Can I reapply after a refusal?",
+      "a": "Yes, there is no waiting period. But without changes to your application or circumstances, a new attempt often ends the same way. We start by analysing the reason for refusal."
+    }
+  ],
+  "seo_description": "US visa from Bishkek: DS-160, DS-5535, I-134, interview booking and preparation. B1/B2, F-1 and J-1 visas.",
+  "flag": "us",
+  "order": 1,
+  "accent": "#3c3b6e",
+  "image": "",
+  "published": true
+}

@@ -1,0 +1,97 @@
+{
+  "slug": "europe",
+  "title": "Schengen visa",
+  "country": "Europe",
+  "nav_title": "Europe (Schengen)",
+  "tagline": "Visas to Germany, France, Italy, Spain and other Schengen countries.",
+  "chips": [
+    "Tourism",
+    "Visiting family",
+    "Business",
+    "National D visa"
+  ],
+  "facts": [
+    {
+      "label": "Visa type",
+      "value": "Schengen (C) and national (D)"
+    },
+    {
+      "label": "Length of stay",
+      "value": "up to 90 days in any 180"
+    },
+    {
+      "label": "Where to apply",
+      "value": "Bishkek or Almaty — depends on the country"
+    },
+    {
+      "label": "Service fee",
+      "value": "Ask us on WhatsApp"
+    }
+  ],
+  "intro": "A Schengen visa opens 29 European countries. You apply to the consulate of your main destination — and each country has its own requirements, visa centre and booking times.\n\nWe tell you where to apply, assemble the documents, complete the form, arrange hotel bookings and insurance, and book your biometrics appointment.",
+  "services": [
+    "Choosing the right country and visa type",
+    "Completing the visa application form",
+    "Itinerary, hotel and flight reservations for the visa",
+    "Travel medical insurance",
+    "Reviewing financial documents and letters",
+    "Booking the visa centre or consulate appointment"
+  ],
+  "sections": [
+    {
+      "heading": "Which country to apply to",
+      "body": "Apply to the country where you will spend the most days. If the days are split evenly, apply to the country of first entry. Choosing the wrong country is a frequent reason for refusal.\n\nSome countries accept applications from Kyrgyz citizens in Bishkek, others only in Almaty or through another country’s mission. We will confirm the current procedure for yours."
+    },
+    {
+      "heading": "National D visa",
+      "body": "Study, work or a long stay require a national visa of a specific country rather than a Schengen visa. The requirements are stricter — we help assemble documents for studying in Italy and France."
+    }
+  ],
+  "documents": [
+    "Passport issued within the last 10 years and valid 3 months beyond the trip",
+    "Photo 3.5×4.5 cm",
+    "Employment letter and bank statement",
+    "Hotel bookings and itinerary",
+    "Medical insurance for the whole trip",
+    "Invitation — for visitor and business visas"
+  ],
+  "documents_note": "Requirements differ by country — we give you the exact list for yours.",
+  "steps": [
+    {
+      "title": "Consultation",
+      "text": "We choose the country and visa type and review your documents."
+    },
+    {
+      "title": "Document package",
+      "text": "We build the checklist and review each document."
+    },
+    {
+      "title": "Form and bookings",
+      "text": "We complete the form and arrange insurance and reservations."
+    },
+    {
+      "title": "Submission",
+      "text": "We book the visa centre and prepare you for biometrics."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How long does a Schengen visa take?",
+      "a": "Usually about 15 calendar days, longer in peak season. Apply early — appointments can be booked several months before the trip."
+    },
+    {
+      "q": "Do I need my own income?",
+      "a": "You must show you can afford the trip. If you are not working, a relative can sponsor you — we explain how to do it properly."
+    },
+    {
+      "q": "Can I get a multiple-entry visa?",
+      "a": "Yes. With a good travel history, consulates more often issue multiple-entry visas for longer periods."
+    }
+  ],
+  "seo_description": "Schengen visa from Bishkek: choosing the country, application form, insurance, bookings and appointment.",
+  "flag": "eu",
+  "order": 2,
+  "accent": "#003399",
+  "image": "",
+  "published": true
+}
