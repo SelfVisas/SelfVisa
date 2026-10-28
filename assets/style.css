@@ -341,11 +341,12 @@ p { margin: 0; }
   .flag-xl { width: 48px; height: 36px; }
   .ph-title { gap: 12px; }
   .hero-ctas .btn { flex: 1; }
+}
 /* === Карточка «Учёба за рубежом» (SelfAcademy) — отдельный жёлтый дизайн === */
 .dir.dir-study { background: #ffb814; color: #142b34; }
 .dir.dir-study .eyebrow { color: #142b34; opacity: .7; }
 .dir.dir-study p { color: rgba(20, 43, 52, .82); }
 .dir.dir-study .dir-more { color: #142b34; }
 .dir.dir-study .dir-icon { color: #142b34; opacity: .1; }
-.dir.dir-study .dir-flags .flag { box-shadow: 0 0 0 2px rgba(20, 43, 52, .15); }}
+.dir.dir-study .dir-flags .flag { box-shadow: 0 0 0 2px rgba(20, 43, 52, .15); }
 
