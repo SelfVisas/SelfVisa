@@ -4,6 +4,11 @@
   "country": "USA",
   "nav_title": "USA",
   "tagline": "B1/B2 tourist, visitor and business visas, F-1 student visas and J-1 exchange programs.",
+  "flag": "us",
+  "order": 1,
+  "accent": "#3c3b6e",
+  "image": "",
+  "published": true,
   "chips": [
     "B1/B2 — tourism & business",
     "F-1 — study",
@@ -92,10 +97,7 @@
       "a": "Yes, there is no waiting period. But without changes to your application or circumstances, a new attempt often ends the same way. We start by analysing the reason for refusal."
     }
   ],
-  "seo_description": "US visa from Bishkek: DS-160, DS-5535, I-134, interview booking and preparation. B1/B2, F-1 and J-1 visas.",
-  "flag": "us",
-  "order": 1,
-  "accent": "#3c3b6e",
-  "image": "",
-  "published": true
+  "side_text": "",
+  "seo_title": "",
+  "seo_description": "US visa from Bishkek: DS-160, DS-5535, I-134, interview booking and preparation. B1/B2, F-1 and J-1 visas."
 }
