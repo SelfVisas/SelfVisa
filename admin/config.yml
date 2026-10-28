@@ -2,7 +2,7 @@
 # ВАЖНО: замените YOUR-GITHUB-USERNAME/selfkg на ваш репозиторий GitHub.
 backend:
   name: github
-  repo: github.com/SelfVisas/selfkg
+  repo: github.com/SelfVisas/self.kg
   branch: main
   commit_messages:
     create: 'Сайт: добавлено {{collection}} «{{slug}}»'
