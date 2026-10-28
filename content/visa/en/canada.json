@@ -4,6 +4,11 @@
   "country": "Canada",
   "nav_title": "Canada",
   "tagline": "Visitor visa (TRV) and Study Permit. Online application.",
+  "flag": "ca",
+  "order": 6,
+  "accent": "#d52b1e",
+  "image": "",
+  "published": true,
   "chips": [
     "TRV — tourism & visiting",
     "Study Permit",
@@ -50,6 +55,7 @@
     "Travel plan or invitation",
     "For study: Letter of Acceptance and proof of funds"
   ],
+  "documents_note": "",
   "steps": [
     {
       "title": "Consultation",
@@ -82,10 +88,7 @@
       "a": "They are separate applications with different purposes. We will advise which one fits your situation."
     }
   ],
-  "seo_description": "Canada visa from Bishkek: TRV visitor visa and Study Permit. Online application, letter of explanation, biometrics.",
-  "flag": "ca",
-  "order": 6,
-  "accent": "#d52b1e",
-  "image": "",
-  "published": true
+  "side_text": "",
+  "seo_title": "",
+  "seo_description": "Canada visa from Bishkek: TRV visitor visa and Study Permit. Online application, letter of explanation, biometrics."
 }
