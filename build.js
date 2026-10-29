@@ -141,7 +141,11 @@ function head(l, from, { title, description, alternates, ogImage }) {
   ${og ? `<meta property="og:image" content="${esc(/^https?:/.test(og) ? og : siteUrl + '/' + og.replace(/^\//, ''))}">` : ''}
   ${alt}
   <meta name="theme-color" content="${esc(site.color_primary || '#14246b')}">
-  <link rel="icon" href="${asset(from, site.favicon || 'assets/favicon.svg')}">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <link rel="stylesheet" href="${asset(from, 'assets/fonts.css')}">
   <link rel="stylesheet" href="${asset(from, 'assets/style.css')}">
   <style>:root{${site.color_primary ? `--brand:${esc(site.color_primary)};` : ''}${site.color_accent ? `--accent:${esc(site.color_accent)};` : ''}}</style>
@@ -523,6 +527,7 @@ function notFound() {
 fs.rmSync(OUT, { recursive: true, force: true });
 fs.mkdirSync(OUT, { recursive: true });
 copyDir(path.join(ROOT, 'assets'), path.join(OUT, 'assets'));
+fs.copyFileSync(path.join(ROOT, 'assets/favicon.ico'), path.join(OUT, 'favicon.ico'));
 copyDir(path.join(ROOT, 'uploads'), path.join(OUT, 'uploads'));
 copyDir(path.join(ROOT, 'admin'), path.join(OUT, 'admin'));
 
