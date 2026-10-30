@@ -4,6 +4,7 @@
   "hero_badge": "SelfVisa · SelfAcademy · Bishkek",
   "hero_title": "Visas and study abroad — **without the guesswork**",
   "hero_subtitle": "We prepare visa documents, complete application forms, choose the right university and support you until the visa is issued and you are enrolled.",
+  "hero_image": "",
   "stats": [
     {
       "value": "6",
@@ -65,7 +66,72 @@
   ],
   "reviews_eyebrow": "Reviews",
   "reviews_heading": "What our clients say",
-  "reviews": [],
+  "reviews": [
+    {
+      "name": "Kairat Mamataliev",
+      "tag": "Schengen Visa",
+      "rating": 5,
+      "source": "",
+      "date": "September 5, 2026",
+      "text": "A huge thank you to SelfVisa!! Thank you for helping my wife and me get our Schengen visas. I’d especially like to thank Ibrahim—I’ve applied for visas many times before and was always on edge, but I’ve never seen the kind of responsiveness and professionalism I found at SelfVisa, and especially from Ibrahim, anywhere else. I’ll only turn to them for any future visa applications. Thank you so much!"
+    },
+    {
+      "name": "Natasha Pastukhova",
+      "tag": "U.S. Visa",
+      "rating": 5,
+      "source": "",
+      "date": "October 10, 2026",
+      "text": "A huge thank you to SelfViza for helping me get a U.S. visa. Special thanks to Ibrahim—he’s very professional. I’d also like to thank Ayim. I wish you continued success in your work and many more grateful visa recipients."
+    },
+    {
+      "name": "Dinara Mamyrova",
+      "tag": "Studying in Korea",
+      "rating": 5,
+      "source": "",
+      "date": "September 4, 2026",
+      "text": "This isn’t the first time we’ve turned to Self Visa, and we’ve always received great assistance. This time, with their help, my daughter was admitted to a university in Korea. A special thank you to Nursultan—he was always available, explained everything, and helped us every step of the way. That was very important to us. Thank you so much! ❤️"
+    },
+    {
+      "name": "Nurali Ulanovv",
+      "tag": "Studying in Korea",
+      "rating": 5,
+      "source": "",
+      "date": "September 3, 2026",
+      "text": "Everything was handled professionally and flawlessly—I started in May, finished, and was admitted by July. They’re always available to provide feedback; they’ll answer any questions at any time and help resolve any issues that come up during the admissions process. Everything moves very quickly—you don’t have to wait for months like you do with other companies. A huge thank you to Nursultan for helping with everything—thank you so much."
+    },
+    {
+      "name": "Saltanat Beishenova",
+      "tag": "Schengen Visa",
+      "rating": 5,
+      "source": "",
+      "date": "August 5, 2026",
+      "text": "This is the second time I’ve used Self’s services. They helped me secure urgent appointments at the VFS visa center for Hungary, since it’s practically impossible to get an appointment there on my own for the next two months. A special thanks to Ibrahim for his help and constant communication. I booked an urgent appointment both online and in person, and both times everything went quickly and without any problems."
+    },
+    {
+      "name": "Beksultan Bapanov",
+      "tag": "Visas for South Korea and Japan",
+      "rating": 5,
+      "source": "",
+      "date": "July 8, 2026",
+      "text": "I applied to SelfVisa for visas to Japan and South Korea—and got both on the first try! The team helped me gather all the documents, explained the process in detail, and were always available. You can tell they’re professionals. Thanks for the help—I recommend them to anyone who wants to get a visa without any unnecessary stress!"
+    },
+    {
+      "name": "Lili Emman",
+      "tag": "U.S. Visa",
+      "rating": 5,
+      "source": "",
+      "date": "January 8, 2026",
+      "text": "I want to thank you for helping me get a tourist visa to the U.S. Thank you personally, Tanya—I’ll finally be able to visit my brother in February 🇺🇲"
+    },
+    {
+      "name": "Altysha E",
+      "tag": "U.S. Visa",
+      "rating": 5,
+      "source": "",
+      "date": "December 22, 2025",
+      "text": "Our whole family got a visa to the U.S.—it was all so easy and hassle-free 🌸 Thank you for your work."
+    }
+  ],
   "faq": [
     {
       "q": "Do you guarantee a visa?",
@@ -93,5 +159,5 @@
   "address": "140/3 Bakaev St., 2nd floor, office 202, Bishkek",
   "hours": "Mon–Sat: 10:00–18:00",
   "footer_text": "Visa consulting and education abroad. Bishkek, Kyrgyzstan.",
-  "ui": {}
+  "ui": null
 }
