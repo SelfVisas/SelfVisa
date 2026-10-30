@@ -124,7 +124,7 @@ collections:
           { label: 'Шаги', name: steps, widget: list, fields: [ { label: Шаг, name: title, widget: string }, { label: Текст, name: text, widget: text } ] },
           { label: 'Отзывы: надзаголовок', name: reviews_eyebrow, widget: string, required: false },
           { label: 'Отзывы: заголовок', name: reviews_heading, widget: string, required: false },
-          { label: 'Отзывы (только настоящие, с согласия клиента)', name: reviews, widget: list, required: false, fields: [ { label: Имя, name: name, widget: string }, { label: 'Направление (например, «Виза в США»)', name: tag, widget: string, required: false }, { label: Текст, name: text, widget: text } ] },
+                    { label: 'Отзывы — карусель в блоке «О нас» (только настоящие, с согласия клиента)', name: reviews, widget: list, required: false, summary: '{{fields.name}} — {{fields.tag}}', fields: [ { label: Имя, name: name, widget: string }, { label: 'Направление (например, «Виза в США»)', name: tag, widget: string, required: false }, { label: 'Оценка (1–5)', name: rating, widget: number, value_type: int, min: 1, max: 5, default: 5, required: false }, { label: 'Откуда отзыв (2ГИС, Google, Instagram)', name: source, widget: string, required: false }, { label: 'Дата (например, «Октябрь 2026»)', name: date, widget: string, required: false }, { label: Текст, name: text, widget: text } ] },
           { label: 'Частые вопросы', name: faq, widget: list, required: false, fields: [ { label: Вопрос, name: q, widget: string }, { label: Ответ, name: a, widget: markdown } ] },
           { label: 'Форма: заголовок', name: form_heading, widget: string },
           { label: 'Форма: текст', name: form_text, widget: text },
