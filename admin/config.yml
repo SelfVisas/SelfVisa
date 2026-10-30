@@ -124,7 +124,7 @@ collections:
           { label: 'Шаги', name: steps, widget: list, fields: [ { label: Шаг, name: title, widget: string }, { label: Текст, name: text, widget: text } ] },
           { label: 'Отзывы: надзаголовок', name: reviews_eyebrow, widget: string, required: false },
           { label: 'Отзывы: заголовок', name: reviews_heading, widget: string, required: false },
-                    { label: 'Отзывы — карусель в блоке «О нас» (только настоящие, с согласия клиента)', name: reviews, widget: list, required: false, summary: '{{fields.name}} — {{fields.tag}}', fields: [ { label: Имя, name: name, widget: string }, { label: 'Направление (например, «Виза в США»)', name: tag, widget: string, required: false }, { label: 'Оценка (1–5)', name: rating, widget: number, value_type: int, min: 1, max: 5, default: 5, required: false }, { label: 'Откуда отзыв (2ГИС, Google, Instagram)', name: source, widget: string, required: false }, { label: 'Дата (например, «Октябрь 2026»)', name: date, widget: string, required: false }, { label: Текст, name: text, widget: text } ] },
+          { label: 'Отзывы — карусель в блоке «О нас» (только настоящие, с согласия клиента)', name: reviews, widget: list, required: false, summary: '{{fields.name}} — {{fields.tag}}', fields: [ { label: Имя, name: name, widget: string }, { label: 'Направление (например, «Виза в США»)', name: tag, widget: string, required: false }, { label: 'Оценка (1–5)', name: rating, widget: number, value_type: int, min: 1, max: 5, default: 5, required: false }, { label: 'Откуда отзыв (2ГИС, Google, Instagram)', name: source, widget: string, required: false }, { label: 'Дата (например, «Октябрь 2026»)', name: date, widget: string, required: false }, { label: Текст, name: text, widget: text } ] },
           { label: 'Частые вопросы', name: faq, widget: list, required: false, fields: [ { label: Вопрос, name: q, widget: string }, { label: Ответ, name: a, widget: markdown } ] },
           { label: 'Форма: заголовок', name: form_heading, widget: string },
           { label: 'Форма: текст', name: form_text, widget: text },
@@ -159,6 +159,14 @@ collections:
           - { label: 'Instagram — @имя', name: instagram_handle, widget: string, required: false }
           - { label: 'Email', name: email, widget: string, required: false }
           - { label: 'Ссылка на карту (2ГИС / Google)', name: map_url, widget: string, required: false }
+          - label: 'Ссылки на отзывы в 2ГИС (кнопки под каруселью отзывов)'
+            name: review_links
+            widget: list
+            required: false
+            summary: '{{fields.title}}'
+            fields:
+              - { label: 'Название кнопки (например, SelfVisa)', name: title, widget: string }
+              - { label: 'Ссылка на профиль 2ГИС (вкладка «Отзывы»)', name: url, widget: string }
           - { label: 'Карта для встраивания (src из iframe)', name: map_embed, widget: string, required: false }
           - { label: 'Основной цвет', name: color_primary, widget: color }
           - { label: 'Акцентный цвет (кнопки)', name: color_accent, widget: color }
