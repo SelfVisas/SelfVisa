@@ -45,3 +45,23 @@
     });
   });
 })();
+
+// карусель отзывов
+(function () {
+  document.querySelectorAll('.rv').forEach(function (rv) {
+    var track = rv.querySelector('.rv-track');
+    if (!track) return;
+    var prev = rv.querySelector('[data-rv="prev"]'), next = rv.querySelector('[data-rv="next"]');
+    var step = function () { var c = track.querySelector('.rv-card'); return c ? c.getBoundingClientRect().width + 16 : track.clientWidth; };
+    var update = function () {
+      if (!prev) return;
+      prev.disabled = track.scrollLeft <= 4;
+      next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
+    };
+    prev && prev.addEventListener('click', function () { track.scrollBy({ left: -step(), behavior: 'smooth' }); });
+    next && next.addEventListener('click', function () { track.scrollBy({ left: step(), behavior: 'smooth' }); });
+    track.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  });
+})();

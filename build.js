@@ -81,9 +81,9 @@ const study = loadSection('study');
 
 // ---------- UI strings (по умолчанию; перекрываются полем ui в content/home/<lang>.json) ----------
 const UI_DEFAULT = {
-  ru: { nav_visa: 'Визы', nav_study: 'Учёба за рубежом', nav_about: 'О нас', nav_contacts: 'Контакты', all_visas: 'Все визы', all_study: 'Все страны', cta_consult: 'Бесплатная консультация', cta_whatsapp: 'Написать в WhatsApp', more: 'Подробнее', home: 'Главная', services: 'Что мы делаем', documents: 'Какие документы нужны', steps: 'Как мы работаем', faq: 'Частые вопросы', other_countries: 'Другие направления', form_title: 'Оставьте заявку', form_text: 'Заполните форму — заявка откроется в WhatsApp, менеджер ответит в рабочее время.', form_name: 'Ваше имя', form_phone: 'Телефон', form_direction: 'Направление', form_comment: 'Комментарий (необязательно)', form_submit: 'Отправить в WhatsApp', wa_hello: 'Здравствуйте! Меня интересует', related: 'Также по этой стране', address: 'Адрес', phone: 'Телефон', hours: 'Часы работы', write_us: 'Напишите нам', menu: 'Меню', footer_note: 'Информация на сайте не является публичной офертой. Решение о выдаче визы и зачислении принимают посольства и учебные заведения.', notfound: 'Страница не найдена', notfound_text: 'Возможно, она была перемещена. Перейдите на главную или напишите нам.', visa_short: 'Визы', study_short: 'Учёба', open_map: 'Открыть на карте' },
-  ky: { nav_visa: 'Визалар', nav_study: 'Чет өлкөдө окуу', nav_about: 'Биз жөнүндө', nav_contacts: 'Байланыш', all_visas: 'Бардык визалар', all_study: 'Бардык өлкөлөр', cta_consult: 'Акысыз кеңеш', cta_whatsapp: 'WhatsApp аркылуу жазуу', more: 'Кененирээк', home: 'Башкы бет', services: 'Биз эмне кылабыз', documents: 'Кандай документтер керек', steps: 'Кантип иштейбиз', faq: 'Көп берилүүчү суроолор', other_countries: 'Башка багыттар', form_title: 'Өтүнмө калтырыңыз', form_text: 'Форманы толтуруңуз — өтүнмө WhatsAppта ачылат, менеджер иш убактысында жооп берет.', form_name: 'Атыңыз', form_phone: 'Телефон', form_direction: 'Багыт', form_comment: 'Комментарий (милдеттүү эмес)', form_submit: 'WhatsAppка жөнөтүү', wa_hello: 'Саламатсызбы! Мени кызыктырат:', related: 'Ушул өлкө боюнча дагы', address: 'Дарек', phone: 'Телефон', hours: 'Иш убактысы', write_us: 'Бизге жазыңыз', menu: 'Меню', footer_note: 'Сайттагы маалымат ачык оферта болуп саналбайт. Виза берүү жана окууга кабыл алуу чечимин элчиликтер жана окуу жайлар кабыл алат.', notfound: 'Барак табылган жок', notfound_text: 'Балким, ал башка жерге көчүрүлгөн. Башкы бетке өтүңүз же бизге жазыңыз.', visa_short: 'Визалар', study_short: 'Окуу', open_map: 'Картадан ачуу' },
-  en: { nav_visa: 'Visas', nav_study: 'Study abroad', nav_about: 'About', nav_contacts: 'Contacts', all_visas: 'All visas', all_study: 'All countries', cta_consult: 'Free consultation', cta_whatsapp: 'Message us on WhatsApp', more: 'Learn more', home: 'Home', services: 'What we do', documents: 'Documents you need', steps: 'How we work', faq: 'FAQ', other_countries: 'Other destinations', form_title: 'Send a request', form_text: 'Fill in the form — your request opens in WhatsApp and a manager replies during working hours.', form_name: 'Your name', form_phone: 'Phone', form_direction: 'Destination', form_comment: 'Comment (optional)', form_submit: 'Send via WhatsApp', wa_hello: 'Hello! I am interested in', related: 'Also for this country', address: 'Address', phone: 'Phone', hours: 'Working hours', write_us: 'Write to us', menu: 'Menu', footer_note: 'Information on this website is not a public offer. Visa and admission decisions are made by embassies and educational institutions.', notfound: 'Page not found', notfound_text: 'It may have moved. Go to the home page or message us.', visa_short: 'Visas', study_short: 'Study', open_map: 'Open map' },
+  ru: { nav_visa: 'Визы', nav_study: 'Учёба за рубежом', nav_about: 'О нас', nav_contacts: 'Контакты', all_visas: 'Все визы', all_study: 'Все страны', cta_consult: 'Бесплатная консультация', cta_whatsapp: 'Написать в WhatsApp', more: 'Подробнее', home: 'Главная', services: 'Что мы делаем', documents: 'Какие документы нужны', steps: 'Как мы работаем', faq: 'Частые вопросы', other_countries: 'Другие направления', form_title: 'Оставьте заявку', form_text: 'Заполните форму — заявка откроется в WhatsApp, менеджер ответит в рабочее время.', form_name: 'Ваше имя', form_phone: 'Телефон', form_direction: 'Направление', form_comment: 'Комментарий (необязательно)', form_submit: 'Отправить в WhatsApp', wa_hello: 'Здравствуйте! Меня интересует', related: 'Также по этой стране', address: 'Адрес', phone: 'Телефон', hours: 'Часы работы', write_us: 'Напишите нам', menu: 'Меню', footer_note: 'Информация на сайте не является публичной офертой. Решение о выдаче визы и зачислении принимают посольства и учебные заведения.', notfound: 'Страница не найдена', notfound_text: 'Возможно, она была перемещена. Перейдите на главную или напишите нам.', visa_short: 'Визы', study_short: 'Учёба', open_map: 'Открыть на карте', reviews: 'Отзывы', reviews_title: 'Что говорят клиенты', reviews_more: 'Все отзывы о нас:', prev: 'Назад', next: 'Вперёд' },
+  ky: { nav_visa: 'Визалар', nav_study: 'Чет өлкөдө окуу', nav_about: 'Биз жөнүндө', nav_contacts: 'Байланыш', all_visas: 'Бардык визалар', all_study: 'Бардык өлкөлөр', cta_consult: 'Акысыз кеңеш', cta_whatsapp: 'WhatsApp аркылуу жазуу', more: 'Кененирээк', home: 'Башкы бет', services: 'Биз эмне кылабыз', documents: 'Кандай документтер керек', steps: 'Кантип иштейбиз', faq: 'Көп берилүүчү суроолор', other_countries: 'Башка багыттар', form_title: 'Өтүнмө калтырыңыз', form_text: 'Форманы толтуруңуз — өтүнмө WhatsAppта ачылат, менеджер иш убактысында жооп берет.', form_name: 'Атыңыз', form_phone: 'Телефон', form_direction: 'Багыт', form_comment: 'Комментарий (милдеттүү эмес)', form_submit: 'WhatsAppка жөнөтүү', wa_hello: 'Саламатсызбы! Мени кызыктырат:', related: 'Ушул өлкө боюнча дагы', address: 'Дарек', phone: 'Телефон', hours: 'Иш убактысы', write_us: 'Бизге жазыңыз', menu: 'Меню', footer_note: 'Сайттагы маалымат ачык оферта болуп саналбайт. Виза берүү жана окууга кабыл алуу чечимин элчиликтер жана окуу жайлар кабыл алат.', notfound: 'Барак табылган жок', notfound_text: 'Балким, ал башка жерге көчүрүлгөн. Башкы бетке өтүңүз же бизге жазыңыз.', visa_short: 'Визалар', study_short: 'Окуу', open_map: 'Картадан ачуу', reviews: 'Пикирлер', reviews_title: 'Кардарлар эмне дешет', reviews_more: 'Биз тууралуу бардык пикирлер:', prev: 'Артка', next: 'Алдыга' },
+  en: { nav_visa: 'Visas', nav_study: 'Study abroad', nav_about: 'About', nav_contacts: 'Contacts', all_visas: 'All visas', all_study: 'All countries', cta_consult: 'Free consultation', cta_whatsapp: 'Message us on WhatsApp', more: 'Learn more', home: 'Home', services: 'What we do', documents: 'Documents you need', steps: 'How we work', faq: 'FAQ', other_countries: 'Other destinations', form_title: 'Send a request', form_text: 'Fill in the form — your request opens in WhatsApp and a manager replies during working hours.', form_name: 'Your name', form_phone: 'Phone', form_direction: 'Destination', form_comment: 'Comment (optional)', form_submit: 'Send via WhatsApp', wa_hello: 'Hello! I am interested in', related: 'Also for this country', address: 'Address', phone: 'Phone', hours: 'Working hours', write_us: 'Write to us', menu: 'Menu', footer_note: 'Information on this website is not a public offer. Visa and admission decisions are made by embassies and educational institutions.', notfound: 'Page not found', notfound_text: 'It may have moved. Go to the home page or message us.', visa_short: 'Visas', study_short: 'Study', open_map: 'Open map', reviews: 'Reviews', reviews_title: 'What our clients say', reviews_more: 'All reviews:', prev: 'Previous', next: 'Next' },
 };
 const ui = (l) => ({ ...UI_DEFAULT[l], ...(home[l]?.ui || {}) });
 
@@ -286,6 +286,40 @@ function countryCard(l, from, d) {
     </a>`;
 }
 
+
+// ---------- отзывы (карусель) + ссылки на 2ГИС ----------
+function stars(n) {
+  const r = Math.max(0, Math.min(5, Math.round(Number(n) || 0)));
+  return r ? `<span class="rv-stars" aria-label="${r}/5">${'★'.repeat(r)}<i>${'★'.repeat(5 - r)}</i></span>` : '';
+}
+function reviewsBlock(l, h, u) {
+  const items = list(h.reviews);
+  const links = list(site.review_links).filter(x => x && x.url);
+  if (!items.length && !links.length) return '';
+  const linkBtns = links.map(x => `<a class="rv-link" href="${esc(x.url)}" target="_blank" rel="noopener">
+      <span class="rv-link-badge">2ГИС</span><span>${esc(x.title || '2GIS')}</span>${I.arrow}</a>`).join('');
+  return `
+      <div class="rv">
+        <div class="rv-head">
+          <div>
+            <span class="eyebrow">${esc(h.reviews_eyebrow || u.reviews)}</span>
+            <h3 class="rv-title">${esc(h.reviews_heading || u.reviews_title)}</h3>
+          </div>
+          ${items.length > 1 ? `<div class="rv-nav">
+            <button type="button" class="rv-btn" data-rv="prev" aria-label="${esc(u.prev)}">${I.arrow}</button>
+            <button type="button" class="rv-btn" data-rv="next" aria-label="${esc(u.next)}">${I.arrow}</button>
+          </div>` : ''}
+        </div>
+        ${items.length ? `<div class="rv-track" tabindex="0">${items.map(r => `
+          <figure class="rv-card">
+            <div class="rv-top">${stars(r.rating)}${r.source ? `<span class="rv-src">${esc(r.source)}</span>` : ''}</div>
+            <blockquote>${esc(r.text)}</blockquote>
+            <figcaption><strong>${esc(r.name)}</strong>${r.tag || r.date ? `<span>${esc([r.tag, r.date].filter(Boolean).join(' · '))}</span>` : ''}</figcaption>
+          </figure>`).join('')}</div>` : ''}
+        ${links.length ? `<div class="rv-links"><span>${esc(u.reviews_more)}</span>${linkBtns}</div>` : ''}
+      </div>`;
+}
+
 // ---------- pages ----------
 function homePage(l) {
   const from = P.home(l), u = ui(l), h = home[l] || {};
@@ -352,6 +386,7 @@ function homePage(l) {
           ${list(h.advantages).map(a => `<div class="adv-item"><span class="adv-check">${I.check}</span><div><h3>${esc(a.title)}</h3><p>${esc(a.text)}</p></div></div>`).join('')}
         </div>
       </div>
+      ${reviewsBlock(l, h, u)}
     </div>
   </section>
 
@@ -359,18 +394,6 @@ function homePage(l) {
   <section class="block wrap">
     <div class="block-head"><span class="eyebrow">${esc(u.steps)}</span><h2>${esc(h.steps_heading || u.steps)}</h2></div>
     <ol class="steps">${list(h.steps).map(s => `<li><h3>${esc(s.title)}</h3><p>${esc(s.text)}</p></li>`).join('')}</ol>
-  </section>` : ''}
-
-  ${list(h.reviews).length ? `
-  <section class="reviews">
-    <div class="wrap">
-      <div class="block-head"><span class="eyebrow">${esc(h.reviews_eyebrow || '')}</span><h2>${esc(h.reviews_heading || '')}</h2></div>
-      <div class="rgrid">${list(h.reviews).map(r => `
-        <figure class="review">
-          <blockquote>${esc(r.text)}</blockquote>
-          <figcaption><strong>${esc(r.name)}</strong>${r.tag ? `<span>${esc(r.tag)}</span>` : ''}</figcaption>
-        </figure>`).join('')}</div>
-    </div>
   </section>` : ''}
 
   ${faqBlock(list(h.faq), u.faq)}
