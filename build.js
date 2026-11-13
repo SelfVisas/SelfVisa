@@ -81,9 +81,9 @@ const study = loadSection('study');
 
 // ---------- UI strings (по умолчанию; перекрываются полем ui в content/home/<lang>.json) ----------
 const UI_DEFAULT = {
-  ru: { nav_visa: 'Визы', nav_study: 'Учёба за рубежом', nav_about: 'О нас', nav_contacts: 'Контакты', all_visas: 'Все визы', all_study: 'Все страны', cta_consult: 'Бесплатная консультация', cta_whatsapp: 'Написать в WhatsApp', more: 'Подробнее', home: 'Главная', services: 'Что мы делаем', documents: 'Какие документы нужны', steps: 'Как мы работаем', faq: 'Частые вопросы', other_countries: 'Другие направления', form_title: 'Оставьте заявку', form_text: 'Заполните форму — заявка откроется в WhatsApp, менеджер ответит в рабочее время.', form_name: 'Ваше имя', form_phone: 'Телефон', form_direction: 'Направление', form_comment: 'Комментарий (необязательно)', form_submit: 'Отправить в WhatsApp', wa_hello: 'Здравствуйте! Меня интересует', related: 'Также по этой стране', address: 'Адрес', phone: 'Телефон', hours: 'Часы работы', write_us: 'Напишите нам', menu: 'Меню', footer_note: 'Информация на сайте не является публичной офертой. Решение о выдаче визы и зачислении принимают посольства и учебные заведения.', notfound: 'Страница не найдена', notfound_text: 'Возможно, она была перемещена. Перейдите на главную или напишите нам.', visa_short: 'Визы', study_short: 'Учёба', open_map: 'Открыть на карте', reviews: 'Отзывы', reviews_title: 'Что говорят клиенты', reviews_more: 'Все отзывы о нас:', prev: 'Назад', next: 'Вперёд' },
-  ky: { nav_visa: 'Визалар', nav_study: 'Чет өлкөдө окуу', nav_about: 'Биз жөнүндө', nav_contacts: 'Байланыш', all_visas: 'Бардык визалар', all_study: 'Бардык өлкөлөр', cta_consult: 'Акысыз кеңеш', cta_whatsapp: 'WhatsApp аркылуу жазуу', more: 'Кененирээк', home: 'Башкы бет', services: 'Биз эмне кылабыз', documents: 'Кандай документтер керек', steps: 'Кантип иштейбиз', faq: 'Көп берилүүчү суроолор', other_countries: 'Башка багыттар', form_title: 'Өтүнмө калтырыңыз', form_text: 'Форманы толтуруңуз — өтүнмө WhatsAppта ачылат, менеджер иш убактысында жооп берет.', form_name: 'Атыңыз', form_phone: 'Телефон', form_direction: 'Багыт', form_comment: 'Комментарий (милдеттүү эмес)', form_submit: 'WhatsAppка жөнөтүү', wa_hello: 'Саламатсызбы! Мени кызыктырат:', related: 'Ушул өлкө боюнча дагы', address: 'Дарек', phone: 'Телефон', hours: 'Иш убактысы', write_us: 'Бизге жазыңыз', menu: 'Меню', footer_note: 'Сайттагы маалымат ачык оферта болуп саналбайт. Виза берүү жана окууга кабыл алуу чечимин элчиликтер жана окуу жайлар кабыл алат.', notfound: 'Барак табылган жок', notfound_text: 'Балким, ал башка жерге көчүрүлгөн. Башкы бетке өтүңүз же бизге жазыңыз.', visa_short: 'Визалар', study_short: 'Окуу', open_map: 'Картадан ачуу', reviews: 'Пикирлер', reviews_title: 'Кардарлар эмне дешет', reviews_more: 'Биз тууралуу бардык пикирлер:', prev: 'Артка', next: 'Алдыга' },
-  en: { nav_visa: 'Visas', nav_study: 'Study abroad', nav_about: 'About', nav_contacts: 'Contacts', all_visas: 'All visas', all_study: 'All countries', cta_consult: 'Free consultation', cta_whatsapp: 'Message us on WhatsApp', more: 'Learn more', home: 'Home', services: 'What we do', documents: 'Documents you need', steps: 'How we work', faq: 'FAQ', other_countries: 'Other destinations', form_title: 'Send a request', form_text: 'Fill in the form — your request opens in WhatsApp and a manager replies during working hours.', form_name: 'Your name', form_phone: 'Phone', form_direction: 'Destination', form_comment: 'Comment (optional)', form_submit: 'Send via WhatsApp', wa_hello: 'Hello! I am interested in', related: 'Also for this country', address: 'Address', phone: 'Phone', hours: 'Working hours', write_us: 'Write to us', menu: 'Menu', footer_note: 'Information on this website is not a public offer. Visa and admission decisions are made by embassies and educational institutions.', notfound: 'Page not found', notfound_text: 'It may have moved. Go to the home page or message us.', visa_short: 'Visas', study_short: 'Study', open_map: 'Open map', reviews: 'Reviews', reviews_title: 'What our clients say', reviews_more: 'All reviews:', prev: 'Previous', next: 'Next' },
+  ru: { nav_visa: 'Визы', nav_study: 'Учёба за рубежом', nav_about: 'О нас', nav_contacts: 'Контакты', all_visas: 'Все визы', all_study: 'Все страны', cta_consult: 'Бесплатная консультация', cta_whatsapp: 'Написать в WhatsApp', more: 'Подробнее', home: 'Главная', services: 'Что мы делаем', documents: 'Какие документы нужны', steps: 'Как мы работаем', faq: 'Частые вопросы', other_countries: 'Другие направления', form_title: 'Оставьте заявку', form_text: 'Заполните форму — заявка откроется в WhatsApp, менеджер ответит в рабочее время.', form_name: 'Ваше имя', form_phone: 'Телефон', form_direction: 'Направление', form_comment: 'Комментарий (необязательно)', form_submit: 'Отправить в WhatsApp', wa_hello: 'Здравствуйте! Меня интересует', related: 'Также по этой стране', address: 'Адрес', phone: 'Телефон', hours: 'Часы работы', write_us: 'Напишите нам', menu: 'Меню', footer_note: 'Информация на сайте не является публичной офертой. Решение о выдаче визы и зачислении принимают посольства и учебные заведения.', notfound: 'Страница не найдена', notfound_text: 'Возможно, она была перемещена. Перейдите на главную или напишите нам.', visa_short: 'Визы', study_short: 'Учёба', open_map: 'Открыть на карте', all: 'Все', watch_video: 'Смотреть видео', open_photo: 'Открыть фото', close: 'Закрыть', gallery_label: 'Фото и видео', text_label: 'Отзывы клиентов', reviews: 'Отзывы', reviews_title: 'Что говорят клиенты', reviews_more: 'Все отзывы о нас:', prev: 'Назад', next: 'Вперёд' },
+  ky: { nav_visa: 'Визалар', nav_study: 'Чет өлкөдө окуу', nav_about: 'Биз жөнүндө', nav_contacts: 'Байланыш', all_visas: 'Бардык визалар', all_study: 'Бардык өлкөлөр', cta_consult: 'Акысыз кеңеш', cta_whatsapp: 'WhatsApp аркылуу жазуу', more: 'Кененирээк', home: 'Башкы бет', services: 'Биз эмне кылабыз', documents: 'Кандай документтер керек', steps: 'Кантип иштейбиз', faq: 'Көп берилүүчү суроолор', other_countries: 'Башка багыттар', form_title: 'Өтүнмө калтырыңыз', form_text: 'Форманы толтуруңуз — өтүнмө WhatsAppта ачылат, менеджер иш убактысында жооп берет.', form_name: 'Атыңыз', form_phone: 'Телефон', form_direction: 'Багыт', form_comment: 'Комментарий (милдеттүү эмес)', form_submit: 'WhatsAppка жөнөтүү', wa_hello: 'Саламатсызбы! Мени кызыктырат:', related: 'Ушул өлкө боюнча дагы', address: 'Дарек', phone: 'Телефон', hours: 'Иш убактысы', write_us: 'Бизге жазыңыз', menu: 'Меню', footer_note: 'Сайттагы маалымат ачык оферта болуп саналбайт. Виза берүү жана окууга кабыл алуу чечимин элчиликтер жана окуу жайлар кабыл алат.', notfound: 'Барак табылган жок', notfound_text: 'Балким, ал башка жерге көчүрүлгөн. Башкы бетке өтүңүз же бизге жазыңыз.', visa_short: 'Визалар', study_short: 'Окуу', open_map: 'Картадан ачуу', all: 'Баары', watch_video: 'Видеону көрүү', open_photo: 'Сүрөттү ачуу', close: 'Жабуу', gallery_label: 'Сүрөттөр жана видео', text_label: 'Кардарлардын пикирлери', reviews: 'Пикирлер', reviews_title: 'Кардарлар эмне дешет', reviews_more: 'Биз тууралуу бардык пикирлер:', prev: 'Артка', next: 'Алдыга' },
+  en: { nav_visa: 'Visas', nav_study: 'Study abroad', nav_about: 'About', nav_contacts: 'Contacts', all_visas: 'All visas', all_study: 'All countries', cta_consult: 'Free consultation', cta_whatsapp: 'Message us on WhatsApp', more: 'Learn more', home: 'Home', services: 'What we do', documents: 'Documents you need', steps: 'How we work', faq: 'FAQ', other_countries: 'Other destinations', form_title: 'Send a request', form_text: 'Fill in the form — your request opens in WhatsApp and a manager replies during working hours.', form_name: 'Your name', form_phone: 'Phone', form_direction: 'Destination', form_comment: 'Comment (optional)', form_submit: 'Send via WhatsApp', wa_hello: 'Hello! I am interested in', related: 'Also for this country', address: 'Address', phone: 'Phone', hours: 'Working hours', write_us: 'Write to us', menu: 'Menu', footer_note: 'Information on this website is not a public offer. Visa and admission decisions are made by embassies and educational institutions.', notfound: 'Page not found', notfound_text: 'It may have moved. Go to the home page or message us.', visa_short: 'Visas', study_short: 'Study', open_map: 'Open map', all: 'All', watch_video: 'Watch video', open_photo: 'Open photo', close: 'Close', gallery_label: 'Photos & videos', text_label: 'Client reviews', reviews: 'Reviews', reviews_title: 'What our clients say', reviews_more: 'All reviews:', prev: 'Previous', next: 'Next' },
 };
 const ui = (l) => ({ ...UI_DEFAULT[l], ...(home[l]?.ui || {}) });
 
@@ -233,6 +233,7 @@ function footer(l, from) {
     <span class="ftr-note">${esc(u.footer_note)}</span>
   </div>
 </footer>
+${lightbox(l)}
 <a class="wa-float" href="${waLink()}" target="_blank" rel="noopener" aria-label="WhatsApp">${I.wa}</a>
 <script>window.SELF_WA=${JSON.stringify(waNumber)};</script>
 <script src="${asset(from, 'assets/site.js')}" defer></script>
@@ -287,37 +288,136 @@ function countryCard(l, from, d) {
 }
 
 
-// ---------- отзывы (карусель) + ссылки на 2ГИС ----------
+// ---------- отзывы: карусель с фото и видео + ссылки на 2ГИС ----------
+// Отзывы хранятся в content/reviews/*.json (раздел «⭐ Отзывы» в админке).
+// Старые отзывы из «Главная → Отзывы» тоже показываются.
+function loadReviews() {
+  const dir = path.join(ROOT, 'content', 'reviews');
+  const files = fs.existsSync(dir) ? fs.readdirSync(dir).filter(f => f.endsWith('.json')) : [];
+  return files.map(f => readJSON(path.join(dir, f))).filter(r => r && r.published !== false)
+    .sort((a, b) => (a.order ?? 99) - (b.order ?? 99));
+}
+const REVIEWS = loadReviews();
+function reviewsFor(l, category) {
+  const pick = (r, key) => (l !== 'ru' && r[key + '_' + l]) || r[key] || '';
+  const shared = REVIEWS.map(r => ({
+    name: r.name, rating: r.rating, source: r.source, date: pick(r, 'date'),
+    tag: pick(r, 'tag'), text: pick(r, 'text'), category: r.category || 'visa',
+    photo: r.photo, video: r.video, video_url: r.video_url,
+  }));
+  const legacy = list((home[l] || {}).reviews).map(r => ({ ...r, category: r.category || '' }));
+  const all = [...shared, ...legacy];
+  return category ? all.filter(r => !r.category || r.category === category) : all;
+}
 function stars(n) {
   const r = Math.max(0, Math.min(5, Math.round(Number(n) || 0)));
   return r ? `<span class="rv-stars" aria-label="${r}/5">${'★'.repeat(r)}<i>${'★'.repeat(5 - r)}</i></span>` : '';
 }
-function reviewsBlock(l, h, u) {
-  const items = list(h.reviews);
+function youtubeId(url) {
+  const m = String(url || '').match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|shorts\/|embed\/|live\/))([\w-]{11})/);
+  return m ? m[1] : '';
+}
+function reviewMedia(from, r, u) {
+  const play = `<span class="rv-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>`;
+  const yt = youtubeId(r.video_url);
+  if (yt) return `<button type="button" class="rv-media is-video" data-lb="yt" data-src="${yt}" aria-label="${esc(u.watch_video)}">
+      <img src="${r.photo ? asset(from, r.photo) : `https://i.ytimg.com/vi/${yt}/hqdefault.jpg`}" alt="" loading="lazy">${play}</button>`;
+  if (r.video) {
+    const v = asset(from, r.video);
+    return `<button type="button" class="rv-media is-video" data-lb="video" data-src="${esc(v)}" aria-label="${esc(u.watch_video)}">
+      ${r.photo ? `<img src="${asset(from, r.photo)}" alt="" loading="lazy">` : `<video src="${esc(v)}#t=0.5" preload="metadata" muted playsinline tabindex="-1"></video>`}${play}</button>`;
+  }
+  if (r.video_url) return `<a class="rv-media is-video is-link" href="${esc(r.video_url)}" target="_blank" rel="noopener" aria-label="${esc(u.watch_video)}">
+      ${r.photo ? `<img src="${asset(from, r.photo)}" alt="" loading="lazy">` : ''}${play}</a>`;
+  if (r.photo) return `<button type="button" class="rv-media" data-lb="img" data-src="${asset(from, r.photo)}" aria-label="${esc(u.open_photo)}">
+      <img src="${asset(from, r.photo)}" alt="" loading="lazy"></button>`;
+  return '';
+}
+// Галерея фото и видео (раздел «🎬 Фото и видео» в админке) — отдельно от текстовых отзывов
+function loadGallery() {
+  const dir = path.join(ROOT, 'content', 'gallery');
+  const files = fs.existsSync(dir) ? fs.readdirSync(dir).filter(f => f.endsWith('.json')) : [];
+  return files.map(f => readJSON(path.join(dir, f))).filter(g => g && g.published !== false && (g.photo || g.video || g.video_url))
+    .sort((a, b) => (a.order ?? 99) - (b.order ?? 99));
+}
+const GALLERY = loadGallery();
+function galleryFor(l, category) {
+  const pick = (g, key) => (l !== 'ru' && g[key + '_' + l]) || g[key] || '';
+  const all = GALLERY.map(g => ({ ...g, title: pick(g, 'title'), subtitle: pick(g, 'subtitle'), category: g.category || '' }));
+  const pool = category ? all.filter(g => !g.category || g.category === category) : all;
+  // чередование: фото, видео, фото, видео…
+  const isVid = g => !!(g.video || g.video_url);
+  const photos = pool.filter(g => !isVid(g)), videos = pool.filter(isVid), out = [];
+  for (let i = 0; i < Math.max(photos.length, videos.length); i++) {
+    if (photos[i]) out.push(photos[i]);
+    if (videos[i]) out.push(videos[i]);
+  }
+  return out;
+}
+function galleryTile(from, g, u) {
+  const play = `<span class="rv-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>`;
+  const cap = g.title || g.subtitle ? `<span class="gal-cap"><strong>${esc(g.title)}</strong>${g.subtitle ? `<span>${esc(g.subtitle)}</span>` : ''}</span>` : '';
+  const img = g.photo ? `<img src="${asset(from, g.photo)}" alt="${esc(g.title || '')}" loading="lazy">` : '';
+  const yt = youtubeId(g.video_url);
+  let attrs, inner, tag = 'button';
+  if (yt) { attrs = `data-lb="yt" data-src="${yt}" aria-label="${esc(u.watch_video)}"`; inner = (img || `<img src="https://i.ytimg.com/vi/${yt}/hqdefault.jpg" alt="" loading="lazy">`) + play; }
+  else if (g.video) { const v = asset(from, g.video); attrs = `data-lb="video" data-src="${esc(v)}" aria-label="${esc(u.watch_video)}"`; inner = (img || `<video src="${esc(v)}#t=0.5" preload="metadata" muted playsinline tabindex="-1"></video>`) + play; }
+  else if (g.video_url) { tag = 'a'; attrs = `href="${esc(g.video_url)}" target="_blank" rel="noopener" aria-label="${esc(u.watch_video)}"`; inner = img + play; }
+  else { attrs = `data-lb="img" data-src="${asset(from, g.photo)}" aria-label="${esc(u.open_photo)}"`; inner = img; }
+  return `<${tag} ${tag === 'button' ? 'type="button" ' : ''}class="gal-tile${g.video || g.video_url ? ' is-video' : ''}" data-cat="${esc(g.category)}" ${attrs}>${inner}${cap}</${tag}>`;
+}
+function navBtns(u) {
+  return `<div class="rv-nav">
+              <button type="button" class="rv-btn" data-rv="prev" aria-label="${esc(u.prev)}">${I.arrow}</button>
+              <button type="button" class="rv-btn" data-rv="next" aria-label="${esc(u.next)}">${I.arrow}</button>
+            </div>`;
+}
+function reviewsSection(l, from, { category = '', withTabs = false, cls = '' } = {}) {
+  const u = ui(l), h = home[l] || {};
+  const items = reviewsFor(l, category).map(r => ({ ...r, photo: '', video: '', video_url: '' }));
+  const media = galleryFor(l, category);
   const links = list(site.review_links).filter(x => x && x.url);
-  if (!items.length && !links.length) return '';
+  if (!items.length && !media.length && !links.length) return '';
+  const cats = new Set([...items, ...media].map(r => r.category).filter(Boolean));
+  const tabs = withTabs && cats.has('visa') && cats.has('study');
   const linkBtns = links.map(x => `<a class="rv-link" href="${esc(x.url)}" target="_blank" rel="noopener">
       <span class="rv-link-badge">2ГИС</span><span>${esc(x.title || '2GIS')}</span>${I.arrow}</a>`).join('');
   return `
-      <div class="rv">
-        <div class="rv-head">
-          <div>
-            <span class="eyebrow">${esc(h.reviews_eyebrow || u.reviews)}</span>
-            <h3 class="rv-title">${esc(h.reviews_heading || u.reviews_title)}</h3>
-          </div>
-          ${items.length > 1 ? `<div class="rv-nav">
-            <button type="button" class="rv-btn" data-rv="prev" aria-label="${esc(u.prev)}">${I.arrow}</button>
-            <button type="button" class="rv-btn" data-rv="next" aria-label="${esc(u.next)}">${I.arrow}</button>
-          </div>` : ''}
+  <section class="block wrap rv-section ${cls}" id="reviews">
+      <div class="rv-head">
+        <div>
+          <span class="eyebrow">${esc(h.reviews_eyebrow || u.reviews)}</span>
+          <h2 class="rv-title">${esc(h.reviews_heading || u.reviews_title)}</h2>
         </div>
-        ${items.length ? `<div class="rv-track" tabindex="0">${items.map(r => `
-          <figure class="rv-card">
-            <div class="rv-top">${stars(r.rating)}${r.source ? `<span class="rv-src">${esc(r.source)}</span>` : ''}</div>
-            <blockquote>${esc(r.text)}</blockquote>
-            <figcaption><strong>${esc(r.name)}</strong>${r.tag || r.date ? `<span>${esc([r.tag, r.date].filter(Boolean).join(' · '))}</span>` : ''}</figcaption>
-          </figure>`).join('')}</div>` : ''}
-        ${links.length ? `<div class="rv-links"><span>${esc(u.reviews_more)}</span>${linkBtns}</div>` : ''}
-      </div>`;
+        ${tabs ? `<div class="rv-tabs">
+          <button type="button" class="on" data-cat="">${esc(u.all)}</button>
+          <button type="button" data-cat="visa">${esc(u.visa_short)}</button>
+          <button type="button" data-cat="study">${esc(u.study_short)}</button>
+        </div>` : ''}
+      </div>
+      ${media.length ? `
+      <div class="rv gal">
+        <div class="rv-bar"><span class="rv-label">${esc(u.gallery_label)}</span>${media.length > 4 ? navBtns(u) : ''}</div>
+        <div class="rv-track gal-track" tabindex="0">${media.map(g => galleryTile(from, g, u)).join('')}</div>
+      </div>` : ''}
+      ${items.length ? `
+      <div class="rv rv-text">
+        <div class="rv-bar"><span class="rv-label">${esc(u.text_label)}</span>${items.length > 1 ? navBtns(u) : ''}</div>
+        <div class="rv-track" tabindex="0">${items.map(r => `
+          <figure class="rv-card" data-cat="${esc(r.category || '')}">
+            <div class="rv-body">
+              <div class="rv-top">${stars(r.rating)}${r.source ? `<span class="rv-src">${esc(r.source)}</span>` : ''}</div>
+              ${r.text ? `<blockquote>${esc(r.text)}</blockquote>` : ''}
+              <figcaption><strong>${esc(r.name || '')}</strong>${r.tag || r.date ? `<span>${esc([r.tag, r.date].filter(Boolean).join(' · '))}</span>` : ''}</figcaption>
+            </div>
+          </figure>`).join('')}</div>
+      </div>` : ''}
+      ${links.length ? `<div class="rv-links"><span>${esc(u.reviews_more)}</span>${linkBtns}</div>` : ''}
+  </section>`;
+}
+function lightbox(l) {
+  const u = ui(l);
+  return `<dialog class="lb" id="lb"><button type="button" class="lb-close" aria-label="${esc(u.close)}">${I.close}</button><div class="lb-body"></div></dialog>`;
 }
 
 // ---------- pages ----------
@@ -366,6 +466,7 @@ function homePage(l) {
       <span class="dir-more">${esc(u.all_study)} ${I.arrow}</span>
     </a>
   </section>
+  ${reviewsSection(l, from, { withTabs: true, cls: 'rv-home' })}
 
   <section class="block wrap" id="visas">
     <div class="block-head"><span class="eyebrow">SelfVisa</span><h2>${esc(h.visa_grid_heading || u.nav_visa)}</h2><a class="link-more" href="${rel(from, P.visaIndex(l))}">${esc(u.all_visas)} ${I.arrow}</a></div>
@@ -386,7 +487,6 @@ function homePage(l) {
           ${list(h.advantages).map(a => `<div class="adv-item"><span class="adv-check">${I.check}</span><div><h3>${esc(a.title)}</h3><p>${esc(a.text)}</p></div></div>`).join('')}
         </div>
       </div>
-      ${reviewsBlock(l, h, u)}
     </div>
   </section>
 
@@ -428,6 +528,7 @@ function indexPage(l, section) {
     </div>
   </section>
   <section class="block wrap"><div class="cgrid">${items.map(d => countryCard(l, from, d)).join('')}</div></section>
+  ${reviewsSection(l, from, { category: section })}
   ${leadForm(l, from)}
 </main>` + footer(l, from);
 }
@@ -509,6 +610,7 @@ function countryPage(l, d) {
       </div>
     </aside>
   </div>
+  ${reviewsSection(l, from, { category: d.section })}
   ${leadForm(l, from, d.title)}
 </main>` + footer(l, from);
 }
