@@ -405,7 +405,9 @@ p { margin: 0; }
 .lb { width: auto; max-width: calc(100vw - 32px); max-height: calc(100vh - 32px); padding: 0; border: 0; border-radius: 16px; background: transparent; overflow: visible; }
 .lb::backdrop { background: rgba(8,12,30,.85); }
 .lb-body { display: grid; place-items: center; }
-.lb-body img, .lb-body video { max-width: 100%; max-height: calc(100vh - 32px); display: block; border-radius: 16px; background: #000; }
+.lb-body img, .lb-body video { display: block; width: auto; height: auto; max-width: calc(100vw - 32px); max-height: calc(100vh - 32px); max-height: calc(100dvh - 32px); object-fit: contain; border-radius: 16px; }
+.lb-body video.is-tall { height: calc(100vh - 32px); height: calc(100dvh - 32px); width: auto; }
+.lb-body video.is-wide { width: min(960px, calc(100vw - 32px)); height: auto; }
 .lb-body iframe { width: min(960px, calc(100vw - 32px)); aspect-ratio: 16 / 9; border: 0; border-radius: 16px; display: block; }
 .lb-close { position: absolute; top: -14px; right: -14px; z-index: 2; width: 40px; height: 40px; border-radius: 50%; border: 0; background: #fff; color: #0d1330; display: grid; place-items: center; cursor: pointer; box-shadow: 0 4px 14px rgba(0,0,0,.3); }
 
