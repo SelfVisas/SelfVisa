@@ -100,9 +100,7 @@ collections:
     sortable_fields: [order, title]
     fields: *country_fields
 
-  - name: home
-
-     - name: reviews
+  - name: reviews
     label: '⭐ Отзывы (текст)'
     label_singular: 'отзыв'
     folder: content/reviews
@@ -157,6 +155,47 @@ collections:
       - { label: 'Порядок (меньше — раньше)', name: order, widget: number, value_type: int, default: 10, required: false }
       - { label: 'Показывать на сайте', name: published, widget: boolean, default: true }
 
+  - name: home
+    label: '🏠 Главная страница и тексты'
+    files:
+      - { name: home_ru, label: 'Главная — Русский', file: content/home/ru.json, fields: &home_fields [
+          { label: 'SEO: заголовок', name: seo_title, widget: string },
+          { label: 'SEO: описание', name: seo_description, widget: text },
+          { label: 'Плашка над заголовком', name: hero_badge, widget: string, required: false },
+          { label: 'Главный заголовок (**выделение** — акцентным цветом)', name: hero_title, widget: string },
+          { label: 'Подзаголовок', name: hero_subtitle, widget: text },
+          { label: 'Фото в шапке (необязательно)', name: hero_image, widget: image, required: false },
+          { label: 'Цифры под заголовком', name: stats, widget: list, required: false, fields: [ { label: Цифра, name: value, widget: string }, { label: Подпись, name: label, widget: string } ] },
+          { label: 'Блок «Визы»: заголовок', name: visa_heading, widget: string },
+          { label: 'Блок «Визы»: текст', name: visa_text, widget: text },
+          { label: 'Блок «Учёба»: заголовок', name: study_heading, widget: string },
+          { label: 'Блок «Учёба»: текст', name: study_text, widget: text },
+          { label: 'Заголовок над визами', name: visa_grid_heading, widget: string },
+          { label: 'Заголовок над учёбой', name: study_grid_heading, widget: string },
+          { label: 'О нас: заголовок', name: about_heading, widget: string },
+          { label: 'О нас: текст', name: about_text, widget: markdown },
+          { label: 'Преимущества', name: advantages, widget: list, fields: [ { label: Заголовок, name: title, widget: string }, { label: Текст, name: text, widget: text } ] },
+          { label: 'Шаги: заголовок', name: steps_heading, widget: string },
+          { label: 'Шаги', name: steps, widget: list, fields: [ { label: Шаг, name: title, widget: string }, { label: Текст, name: text, widget: text } ] },
+          { label: 'Отзывы: надзаголовок', name: reviews_eyebrow, widget: string, required: false },
+          { label: 'Отзывы: заголовок', name: reviews_heading, widget: string, required: false },
+          { label: 'Старые отзывы (лучше добавлять в раздел «⭐ Отзывы»)', name: reviews, widget: list, required: false, summary: '{{fields.name}} — {{fields.tag}}', fields: [ { label: Имя, name: name, widget: string }, { label: 'Направление (например, «Виза в США»)', name: tag, widget: string, required: false }, { label: 'Оценка (1–5)', name: rating, widget: number, value_type: int, min: 1, max: 5, default: 5, required: false }, { label: 'Откуда отзыв (2ГИС, Google, Instagram)', name: source, widget: string, required: false }, { label: 'Дата (например, «Октябрь 2026»)', name: date, widget: string, required: false }, { label: Текст, name: text, widget: text } ] },
+          { label: 'Частые вопросы', name: faq, widget: list, required: false, fields: [ { label: Вопрос, name: q, widget: string }, { label: Ответ, name: a, widget: markdown } ] },
+          { label: 'Форма: заголовок', name: form_heading, widget: string },
+          { label: 'Форма: текст', name: form_text, widget: text },
+          { label: 'Форма: доп. варианты направлений', name: form_other_options, widget: list, required: false },
+          { label: 'Адрес', name: address, widget: string },
+          { label: 'Часы работы', name: hours, widget: string },
+          { label: 'Текст в подвале', name: footer_text, widget: text },
+          { label: 'Надписи интерфейса (кнопки, меню) — необязательно', name: ui, widget: object, required: false, collapsed: true, fields: [
+              { label: 'Меню: Визы', name: nav_visa, widget: string, required: false },
+              { label: 'Меню: Учёба', name: nav_study, widget: string, required: false },
+              { label: 'Кнопка консультации', name: cta_consult, widget: string, required: false },
+              { label: 'Кнопка WhatsApp', name: cta_whatsapp, widget: string, required: false },
+              { label: 'Начало сообщения в WhatsApp', name: wa_hello, widget: string, required: false },
+              { label: 'Примечание в подвале', name: footer_note, widget: text, required: false } ] } ] }
+      - { name: home_ky, label: 'Главная — Кыргызча', file: content/home/ky.json, fields: *home_fields }
+      - { name: home_en, label: 'Главная — English', file: content/home/en.json, fields: *home_fields }
 
   - name: settings
     label: '⚙️ Настройки и контакты'
