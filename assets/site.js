@@ -90,7 +90,11 @@
     e.preventDefault();
     var src = m.dataset.src, t = m.dataset.lb;
     if (t === 'img') body.innerHTML = '<img src="' + src + '" alt="">';
-    else if (t === 'video') body.innerHTML = '<video src="' + src + '" controls autoplay playsinline></video>';
+    else if (t === 'video') {
+      body.innerHTML = '<video src="' + src + '" controls autoplay playsinline></video>';
+      var v = body.querySelector('video');
+      v.addEventListener('loadedmetadata', function () { v.classList.add(v.videoHeight > v.videoWidth ? 'is-tall' : 'is-wide'); });
+    }
     else if (t === 'yt') body.innerHTML = '<iframe src="https://www.youtube.com/embed/' + src + '?autoplay=1&rel=0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
     lb.showModal();
   });
