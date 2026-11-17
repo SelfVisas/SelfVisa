@@ -55,6 +55,37 @@ function asset(from, p) {
   return rel(from, p.replace(/^\//, ''));
 }
 
+// ---------- сжатые копии фото (экономия трафика) ----------
+// При сборке каждое фото из uploads/ сохраняется в уменьшенных копиях WebP (uploads/_s/).
+// Если сжатие недоступно, используется оригинал.
+const SIZES = {};
+function img(from, p, w) {
+  if (!p || /^https?:\/\//.test(p)) return asset(from, p);
+  const key = p.replace(/^\//, '') + '|' + w;
+  return SIZES[key] ? rel(from, SIZES[key]) : asset(from, p);
+}
+async function makeSizes() {
+  let sharp;
+  try { sharp = require('sharp'); } catch (e) { console.log('sharp не установлен — фото без сжатия'); return; }
+  const src = path.join(ROOT, 'uploads');
+  if (!fs.existsSync(src)) return;
+  const walk = d => fs.readdirSync(d).flatMap(f => { const x = path.join(d, f); return fs.statSync(x).isDirectory() ? (f === '_s' ? [] : walk(x)) : [x]; });
+  const files = walk(src).filter(f => /\.(jpe?g|png|webp|heic|heif)$/i.test(f));
+  for (const f of files) {
+    const relPath = path.relative(ROOT, f).split(path.sep).join('/');
+    for (const w of [600, 1400]) {
+      const outRel = 'uploads/_s/' + relPath.replace(/^uploads\//, '').replace(/\.[^.]+$/, '') + '-' + w + '.webp';
+      const outAbs = path.join(OUT, outRel);
+      try {
+        fs.mkdirSync(path.dirname(outAbs), { recursive: true });
+        await sharp(f).rotate().resize({ width: w, withoutEnlargement: true }).webp({ quality: 78 }).toFile(outAbs);
+        SIZES[relPath + '|' + w] = outRel;
+      } catch (e) { console.log('Не удалось сжать', relPath, e.message); }
+    }
+  }
+  console.log('Сжато фото:', files.length);
+}
+
 // ---------- load content ----------
 const site = readJSON(path.join(ROOT, 'content/settings/site.json'), {});
 const home = {};
@@ -325,12 +356,12 @@ function reviewMedia(from, r, u) {
   if (r.video) {
     const v = asset(from, r.video);
     return `<button type="button" class="rv-media is-video" data-lb="video" data-src="${esc(v)}" aria-label="${esc(u.watch_video)}">
-      ${r.photo ? `<img src="${asset(from, r.photo)}" alt="" loading="lazy">` : `<video src="${esc(v)}#t=0.5" preload="metadata" muted playsinline tabindex="-1"></video>`}${play}</button>`;
+      ${r.photo ? `<img src="${img(from, r.photo, 600)}" alt="" loading="lazy">` : `<span class="gal-ph" aria-hidden="true"></span>`}${play}</button>`;
   }
   if (r.video_url) return `<a class="rv-media is-video is-link" href="${esc(r.video_url)}" target="_blank" rel="noopener" aria-label="${esc(u.watch_video)}">
       ${r.photo ? `<img src="${asset(from, r.photo)}" alt="" loading="lazy">` : ''}${play}</a>`;
-  if (r.photo) return `<button type="button" class="rv-media" data-lb="img" data-src="${asset(from, r.photo)}" aria-label="${esc(u.open_photo)}">
-      <img src="${asset(from, r.photo)}" alt="" loading="lazy"></button>`;
+  if (r.photo) return `<button type="button" class="rv-media" data-lb="img" data-src="${img(from, r.photo, 1400)}" aria-label="${esc(u.open_photo)}">
+      <img src="${img(from, r.photo, 600)}" alt="" loading="lazy"></button>`;
   return '';
 }
 // Галерея фото и видео (раздел «🎬 Фото и видео» в админке) — отдельно от текстовых отзывов
@@ -357,13 +388,14 @@ function galleryFor(l, category) {
 function galleryTile(from, g, u) {
   const play = `<span class="rv-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>`;
   const cap = g.title || g.subtitle ? `<span class="gal-cap"><strong>${esc(g.title)}</strong>${g.subtitle ? `<span>${esc(g.subtitle)}</span>` : ''}</span>` : '';
-  const img = g.photo ? `<img src="${asset(from, g.photo)}" alt="${esc(g.title || '')}" loading="lazy">` : '';
+  const cover = g.photo ? `<img src="${img(from, g.photo, 600)}" alt="${esc(g.title || '')}" loading="lazy" decoding="async">` : '';
+  const noCover = `<span class="gal-ph" aria-hidden="true"></span>`;
   const yt = youtubeId(g.video_url);
   let attrs, inner, tag = 'button';
-  if (yt) { attrs = `data-lb="yt" data-src="${yt}" aria-label="${esc(u.watch_video)}"`; inner = (img || `<img src="https://i.ytimg.com/vi/${yt}/hqdefault.jpg" alt="" loading="lazy">`) + play; }
-  else if (g.video) { const v = asset(from, g.video); attrs = `data-lb="video" data-src="${esc(v)}" aria-label="${esc(u.watch_video)}"`; inner = (img || `<video src="${esc(v)}#t=0.5" preload="metadata" muted playsinline tabindex="-1"></video>`) + play; }
-  else if (g.video_url) { tag = 'a'; attrs = `href="${esc(g.video_url)}" target="_blank" rel="noopener" aria-label="${esc(u.watch_video)}"`; inner = img + play; }
-  else { attrs = `data-lb="img" data-src="${asset(from, g.photo)}" aria-label="${esc(u.open_photo)}"`; inner = img; }
+  if (yt) { const tall = /\/shorts\//.test(g.video_url); attrs = `data-lb="yt" data-src="${yt}"${tall ? ' data-shape="tall"' : ''} aria-label="${esc(u.watch_video)}"`; inner = (cover || `<img src="https://i.ytimg.com/vi/${yt}/hqdefault.jpg" alt="" loading="lazy">`) + play; }
+  else if (g.video) { const v = asset(from, g.video); attrs = `data-lb="video" data-src="${esc(v)}" aria-label="${esc(u.watch_video)}"`; inner = (cover || noCover) + play; }
+  else if (g.video_url) { tag = 'a'; attrs = `href="${esc(g.video_url)}" target="_blank" rel="noopener" aria-label="${esc(u.watch_video)}"`; inner = (cover || noCover) + play; }
+  else { attrs = `data-lb="img" data-src="${img(from, g.photo, 1400)}" aria-label="${esc(u.open_photo)}"`; inner = cover; }
   return `<${tag} ${tag === 'button' ? 'type="button" ' : ''}class="gal-tile${g.video || g.video_url ? ' is-video' : ''}" data-cat="${esc(g.category)}" ${attrs}>${inner}${cap}</${tag}>`;
 }
 function navBtns(u) {
@@ -440,7 +472,7 @@ function homePage(l) {
         ${list(h.stats).length ? `<dl class="stats">${list(h.stats).map(s => `<div><dt>${esc(s.value)}</dt><dd>${esc(s.label)}</dd></div>`).join('')}</dl>` : ''}
       </div>
       <div class="hero-art" aria-hidden="true">
-        ${h.hero_image ? `<img class="hero-photo" src="${asset(from, h.hero_image)}" alt="">` : ''}
+        ${h.hero_image ? `<img class="hero-photo" src="${img(from, h.hero_image, 1400)}" alt="">` : ''}
         <div class="stamps">
           ${heroFlags.map((d, i) => `<div class="stamp s${i}">${flag(from, d.flag, 'flag')}<span>${esc(d.country || '')}</span></div>`).join('')}
         </div>
@@ -541,11 +573,11 @@ function countryPage(l, d) {
   const idx = d.section === 'visa' ? P.visaIndex(l) : P.studyIndex(l);
   const idxLabel = d.section === 'visa' ? u.nav_visa : u.nav_study;
   const waText = `${u.wa_hello} ${d.title}`;
-  const img = d.image ? asset(from, d.image) : '';
+  const heroImg = d.image ? img(from, d.image, 1400) : '';
   return head(l, from, { title: d.seo_title || d.title, description: d.seo_description || d.tagline, alternates, ogImage: d.image }) + `<body>` + header(l, from, alternates) + `
 <main id="main">
-  <section class="page-hero${img ? ' has-img' : ''}" style="--c:${esc(d.accent || 'var(--brand)')}">
-    ${img ? `<img class="ph-img" src="${img}" alt="">` : `<div class="ph-pattern" aria-hidden="true">${flag(from, d.flag, 'ph-flag')}</div>`}
+  <section class="page-hero${heroImg ? ' has-img' : ''}" style="--c:${esc(d.accent || 'var(--brand)')}">
+    ${heroImg ? `<img class="ph-img" src="${heroImg}" alt="">` : `<div class="ph-pattern" aria-hidden="true">${flag(from, d.flag, 'ph-flag')}</div>`}
     <div class="wrap ph-inner">
       <nav class="crumbs"><a href="${rel(from, P.home(l))}">${esc(u.home)}</a><span>/</span><a href="${rel(from, idx)}">${esc(idxLabel)}</a><span>/</span><span>${esc(d.country || d.title)}</span></nav>
       <div class="ph-title">${flag(from, d.flag, 'flag flag-xl')}<h1>${esc(d.title)}</h1></div>
@@ -656,6 +688,9 @@ fs.copyFileSync(path.join(ROOT, 'assets/favicon.ico'), path.join(OUT, 'favicon.i
 copyDir(path.join(ROOT, 'uploads'), path.join(OUT, 'uploads'));
 copyDir(path.join(ROOT, 'admin'), path.join(OUT, 'admin'));
 
+makeSizes().then(buildPages);
+
+function buildPages() {
 const urls = [];
 const out = (p, html) => { writeFile(p + 'index.html', html); urls.push(p); };
 for (const l of LANGS) {
@@ -670,3 +705,4 @@ writeFile('404.html', notFound());
 writeFile('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u => `  <url><loc>${abs(u)}</loc></url>`).join('\n')}\n</urlset>\n`);
 writeFile('robots.txt', `User-agent: *\nDisallow: /admin/\nSitemap: ${siteUrl}/sitemap.xml\n`);
 console.log(`Built ${urls.length} pages → dist/${PREVIEW ? ' (preview links)' : ''}`);
+}

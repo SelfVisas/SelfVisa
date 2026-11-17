@@ -91,11 +91,11 @@
     var src = m.dataset.src, t = m.dataset.lb;
     if (t === 'img') body.innerHTML = '<img src="' + src + '" alt="">';
     else if (t === 'video') {
-      body.innerHTML = '<video src="' + src + '" controls autoplay playsinline></video>';
+      body.innerHTML = '<video src="' + src + '" controls autoplay playsinline preload="auto"></video>';
       var v = body.querySelector('video');
       v.addEventListener('loadedmetadata', function () { v.classList.add(v.videoHeight > v.videoWidth ? 'is-tall' : 'is-wide'); });
     }
-    else if (t === 'yt') body.innerHTML = '<iframe src="https://www.youtube.com/embed/' + src + '?autoplay=1&rel=0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+    else if (t === 'yt') body.innerHTML = '<iframe' + (m.dataset.shape === 'tall' ? ' class="is-tall"' : '') + ' src="https://www.youtube.com/embed/' + src + '?autoplay=1&rel=0&playsinline=1" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';
     lb.showModal();
   });
 })();

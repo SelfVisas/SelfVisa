@@ -7,7 +7,8 @@
     "preview": "PREVIEW=1 node build.js"
   },
   "dependencies": {
-    "marked": "^14.1.4"
+    "marked": "^14.1.4",
+    "sharp": "^0.33.5"
   },
   "private": true,
   "engines": {
