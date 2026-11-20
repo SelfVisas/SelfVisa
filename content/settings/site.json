@@ -4,7 +4,7 @@
   "site_url": "https://self.kg",
   "phone_display": "+996 504 666 262",
   "whatsapp": "996504666262",
-  "whatsapp_display": "996504666262",
+  "whatsapp_display": "+996 504 666 262",
   "instagram": "https://www.instagram.com/selfvisa.kgz/",
   "instagram_handle": "@selfvisa.kg",
   "email": "partnership@self.kg",
@@ -15,7 +15,7 @@
       "url": "https://2gis.kg/bishkek/firm/70000001068105009/tab/reviews"
     }
   ],
-  "map_embed": "https://www.google.com/maps/place/SelfVisa/@42.828931,74.5760429,17z/data=!3m1!4b1!4m6!3m5!1s0x6046fa289c1b1e89:0x45a392ee828bc268!8m2!3d42.8289271!4d74.5786178!16s%2Fg%2F11v0l8jn0q?entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D",
+  "map_embed": "https://maps.google.com/maps?q=42.8289271,74.5786178&z=17&output=embed",
   "color_primary": "#1734ca",
   "color_accent": "#ffb814",
   "logo": "/uploads/SELF-logo-transparent.png",

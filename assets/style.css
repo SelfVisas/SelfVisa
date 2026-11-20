@@ -423,3 +423,12 @@ p { margin: 0; }
 .lead-b24 { display: block; min-height: 380px; padding: 8px; overflow: hidden; }
 .lead-b24 .b24-form-wrapper, .lead-b24 .b24-form { max-width: 100% !important; }
 .lead-wa { justify-self: start; margin-top: 8px; }
+
+/* === Экономия трафика: видео без обложки и YouTube Shorts === */
+.gal-ph { position: absolute; inset: 0; background: radial-gradient(120% 80% at 30% 20%, color-mix(in srgb, var(--brand) 70%, #fff 0%), var(--ink)); }
+.lb-body iframe.is-tall { width: auto; height: min(calc(100dvh - 32px), 860px); aspect-ratio: 9 / 16; max-width: calc(100vw - 32px); }
+
+/* === Форма Битрикс24 в блоке заявки === */
+.lead-b24 { display: block; min-height: 380px; padding: 8px; overflow: hidden; }
+.lead-b24 .b24-form-wrapper, .lead-b24 .b24-form { max-width: 100% !important; }
+.lead-wa { justify-self: start; margin-top: 8px; }
