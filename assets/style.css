@@ -449,3 +449,17 @@ p { margin: 0; }
 .lead-b24 .b24-form-btn { width: 100% !important; height: auto !important; padding: 1em 1.6em !important; border: 0 !important; border-radius: 999px !important; background: var(--wa) !important; color: #fff !important; font: 700 1.02rem/1 var(--font) !important; box-shadow: none !important; cursor: pointer; }
 .lead-b24 .b24-form-btn:hover { background: #178a48 !important; }
 .lead-b24 .b24-form-sign { padding: 10px 0 0 !important; opacity: .55; font-size: .75rem !important; }
+/* === Битрикс24: экран «Спасибо» в стиле SelfVisa === */
+.lead-b24 .b24-form-state-container, .lead-b24 .b24-form-state, .lead-b24 .b24-form-success { background: var(--surface) !important; color: var(--ink) !important; border-radius: 18px; }
+.lead-b24 .b24-form-state-inner { display: flex !important; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 28px 16px !important; text-align: center; }
+.lead-b24 .b24-form-success-icon { width: 180px !important; height: 96px !important; margin: 0 auto 6px !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; background: url("/uploads/SELF-logo-transparent.png") center / contain no-repeat !important; }
+.lead-b24 .b24-form-success-icon::before, .lead-b24 .b24-form-success-icon::after { display: none !important; }
+.lead-b24 .b24-form-success .b24-form-state-inner::before { content: "Спасибо за обращение в SelfVisa!"; order: 1; font: 600 clamp(1.3rem, 2.4vw, 1.7rem)/1.2 var(--display); color: var(--ink); max-width: 18ch; }
+.lead-b24 .b24-form-success .b24-form-state-inner::before { margin-top: 30px; }
+html[lang="ky"] .lead-b24 .b24-form-success .b24-form-state-inner::before { content: "SelfVisa'га кайрылганыңыз үчүн рахмат!"; }
+html[lang="en"] .lead-b24 .b24-form-success .b24-form-state-inner::before { content: "Thank you for contacting SelfVisa!"; }
+.lead-b24 .b24-form-success-icon { order: 0; }
+.lead-b24 .b24-form-state-text { order: 2; margin: 0 !important; font: 500 1rem/1.5 var(--font) !important; color: var(--muted) !important; max-width: 34ch; }
+.lead-b24 .b24-form-state-text p { margin: 0 !important; color: inherit !important; font: inherit !important; }
+.lead-b24 .b24-form-state .b24-form-btn { order: 3; width: auto !important; margin-top: 6px; padding: .8em 1.4em !important; background: transparent !important; color: var(--ink) !important; border: 1.5px solid var(--ink) !important; }
+.lead-b24 .b24-form-state .b24-form-btn:hover { background: var(--ink) !important; color: #fff !important; }
