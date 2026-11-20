@@ -223,6 +223,9 @@ collections:
               - { label: 'Название кнопки (например, SelfVisa)', name: title, widget: string }
               - { label: 'Ссылка на профиль 2ГИС (вкладка «Отзывы»)', name: url, widget: string }
           - { label: 'Карта для встраивания (src из iframe)', name: map_embed, widget: string, required: false }
+          - { label: 'Форма Битрикс24 — код для сайта (вставьте целиком <script…>…</script>)', name: b24_form, widget: text, required: false, hint: 'Заменяет форму WhatsApp внизу всех страниц. Пусто — работает форма WhatsApp' }
+          - { label: 'Форма Битрикс24 — для кыргызской версии (если пусто — та же)', name: b24_form_ky, widget: text, required: false }
+          - { label: 'Форма Битрикс24 — для английской версии (если пусто — та же)', name: b24_form_en, widget: text, required: false }
           - { label: 'Основной цвет', name: color_primary, widget: color }
           - { label: 'Акцентный цвет (кнопки)', name: color_accent, widget: color }
           - { label: 'Логотип (если пусто — текстовый SELF)', name: logo, widget: image, required: false }
