@@ -271,6 +271,11 @@ ${lightbox(l)}
 </body></html>`;
 }
 
+// Форма Битрикс24 (Настройки → «Форма Битрикс24»). Если код не вставлен — работает форма WhatsApp.
+function b24Code(l) {
+  const code = (l !== 'ru' && site['b24_form_' + l]) || site.b24_form || '';
+  return String(code).trim();
+}
 function leadForm(l, from, preset) {
   const u = ui(l), h = home[l] || {};
   const opts = [
@@ -291,7 +296,9 @@ function leadForm(l, from, preset) {
         ${h.hours ? `<li>${I.clock}<span>${esc(h.hours)}</span></li>` : ''}
         ${site.instagram ? `<li>${I.ig}<a href="${esc(site.instagram)}" target="_blank" rel="noopener">${esc(site.instagram_handle || 'Instagram')}</a></li>` : ''}
       </ul>
+      ${b24Code(l) && waNumber ? `<a class="btn btn-wa lead-wa" href="${waLink(u.wa_hello)}" target="_blank" rel="noopener">${I.wa}<span>${esc(u.cta_whatsapp)}</span></a>` : ''}
     </div>
+    ${b24Code(l) ? `<div class="lead-form lead-b24">${b24Code(l)}</div>` : `
     <form class="lead-form" data-wa-form data-hello="${esc(u.wa_hello)}">
       <label><span>${esc(u.form_name)}</span><input name="name" required autocomplete="name"></label>
       <label><span>${esc(u.form_phone)}</span><input name="phone" type="tel" required autocomplete="tel" placeholder="+996"></label>
@@ -302,7 +309,7 @@ function leadForm(l, from, preset) {
       </label>
       <label><span>${esc(u.form_comment)}</span><textarea name="comment" rows="3"></textarea></label>
       <button class="btn btn-wa btn-lg" type="submit">${I.wa}<span>${esc(u.form_submit)}</span></button>
-    </form>
+    </form>`}
   </div>
 </section>`;
 }

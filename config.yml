@@ -1,0 +1,233 @@
+# Настройки админ-панели SELF.KG (Sveltia CMS / Decap CMS)
+# ВАЖНО: замените YOUR-GITHUB-USERNAME/selfkg на ваш репозиторий GitHub.
+backend:
+  name: github
+  repo: SelfVisas/SelfVisa
+  branch: main
+  commit_messages:
+    create: 'Сайт: добавлено {{collection}} «{{slug}}»'
+    update: 'Сайт: изменено {{collection}} «{{slug}}»'
+    delete: 'Сайт: удалено {{collection}} «{{slug}}»'
+
+site_url: https://self.kg
+display_url: https://self.kg
+locale: ru
+
+media_folder: uploads
+public_folder: /uploads
+
+i18n:
+  structure: multiple_folders
+  locales: [ru, ky, en]
+  default_locale: ru
+
+collections:
+  - name: visa
+    label: '✈️ Визы'
+    label_singular: 'страну (виза)'
+    folder: content/visa
+    format: json
+    create: true
+    delete: true
+    i18n: true
+    identifier_field: title
+    slug: '{{fields.slug}}'
+    summary: '{{title}}'
+    sortable_fields: [order, title]
+    fields: &country_fields
+      - { label: 'Адрес страницы (латиницей, например usa или korea)', name: slug, widget: string, i18n: duplicate, pattern: ['^[a-z0-9-]+$', 'Только латинские буквы, цифры и дефис'] }
+      - { label: 'Заголовок страницы', name: title, widget: string, i18n: true, hint: 'Например: «Виза в США»' }
+      - { label: 'Страна', name: country, widget: string, i18n: true }
+      - { label: 'Название в меню', name: nav_title, widget: string, i18n: true, required: false }
+      - { label: 'Короткое описание', name: tagline, widget: text, i18n: true, hint: 'Показывается в карточке и под заголовком' }
+      - { label: 'Флаг (код страны)', name: flag, widget: select, i18n: duplicate, options: [us, eu, cn, kr, jp, ca, fr, it, my, gb, kg, ru] }
+      - { label: 'Порядок в списке', name: order, widget: number, value_type: int, i18n: duplicate, default: 10 }
+      - { label: 'Цвет акцента', name: accent, widget: color, i18n: duplicate, required: false }
+      - { label: 'Фото для шапки (необязательно)', name: image, widget: image, i18n: duplicate, required: false }
+      - { label: 'Опубликовано', name: published, widget: boolean, i18n: duplicate, default: true }
+      - { label: 'Метки (типы виз / программ)', name: chips, widget: list, i18n: true, required: false }
+      - label: 'Ключевые факты (полоса под шапкой)'
+        name: facts
+        widget: list
+        i18n: true
+        required: false
+        fields:
+          - { label: Название, name: label, widget: string }
+          - { label: Значение, name: value, widget: string }
+      - { label: 'Вступительный текст', name: intro, widget: markdown, i18n: true, required: false }
+      - { label: 'Что мы делаем (список)', name: services, widget: list, i18n: true, required: false }
+      - label: 'Разделы с текстом'
+        name: sections
+        widget: list
+        i18n: true
+        required: false
+        fields:
+          - { label: Заголовок, name: heading, widget: string }
+          - { label: Текст, name: body, widget: markdown }
+      - { label: 'Документы (список)', name: documents, widget: list, i18n: true, required: false }
+      - { label: 'Примечание к документам', name: documents_note, widget: string, i18n: true, required: false }
+      - label: 'Шаги работы'
+        name: steps
+        widget: list
+        i18n: true
+        required: false
+        fields:
+          - { label: Шаг, name: title, widget: string }
+          - { label: Описание, name: text, widget: text }
+      - label: 'Частые вопросы'
+        name: faq
+        widget: list
+        i18n: true
+        required: false
+        fields:
+          - { label: Вопрос, name: q, widget: string }
+          - { label: Ответ, name: a, widget: markdown }
+      - { label: 'Текст в боковой карточке', name: side_text, widget: text, i18n: true, required: false }
+      - { label: 'SEO: заголовок', name: seo_title, widget: string, i18n: true, required: false }
+      - { label: 'SEO: описание', name: seo_description, widget: text, i18n: true, required: false }
+
+  - name: study
+    label: '🎓 Учёба за рубежом'
+    label_singular: 'страну (учёба)'
+    folder: content/study
+    format: json
+    create: true
+    delete: true
+    i18n: true
+    identifier_field: title
+    slug: '{{fields.slug}}'
+    summary: '{{title}}'
+    sortable_fields: [order, title]
+    fields: *country_fields
+
+  - name: reviews
+    label: '⭐ Отзывы (текст)'
+    label_singular: 'отзыв'
+    folder: content/reviews
+    format: json
+    create: true
+    delete: true
+    identifier_field: name
+    slug: '{{year}}{{month}}{{day}}-{{hour}}{{minute}}{{second}}'
+    summary: '{{name}} — {{tag}}'
+    sortable_fields: [order, name]
+    fields:
+      - { label: 'Имя клиента', name: name, widget: string }
+      - { label: 'Раздел', name: category, widget: select, default: visa, options: [ { label: 'Визы (SelfVisa)', value: visa }, { label: 'Учёба (SelfAcademy)', value: study } ] }
+      - { label: 'Оценка (1–5)', name: rating, widget: number, value_type: int, min: 1, max: 5, default: 5, required: false }
+      - { label: 'Откуда отзыв (2ГИС, Google, Instagram)', name: source, widget: string, required: false }
+      - { label: 'Направление — RU (например, «Виза в США»)', name: tag, widget: string, required: false }
+      - { label: 'Направление — KG', name: tag_ky, widget: string, required: false }
+      - { label: 'Направление — EN', name: tag_en, widget: string, required: false }
+      - { label: 'Дата — RU (например, «Октябрь 2026»)', name: date, widget: string, required: false }
+      - { label: 'Дата — KG', name: date_ky, widget: string, required: false }
+      - { label: 'Дата — EN', name: date_en, widget: string, required: false }
+      - { label: 'Текст отзыва — RU', name: text, widget: text, required: false }
+      - { label: 'Текст отзыва — KG (если пусто, покажется RU)', name: text_ky, widget: text, required: false }
+      - { label: 'Текст отзыва — EN (если пусто, покажется RU)', name: text_en, widget: text, required: false }
+      - { label: 'Порядок (меньше — раньше)', name: order, widget: number, value_type: int, default: 10, required: false }
+      - { label: 'Показывать на сайте', name: published, widget: boolean, default: true }
+
+  - name: gallery
+    label: '🎬 Фото и видео (в блоке отзывов)'
+    label_singular: 'фото или видео'
+    folder: content/gallery
+    format: json
+    create: true
+    delete: true
+    identifier_field: title
+    slug: '{{year}}{{month}}{{day}}-{{hour}}{{minute}}{{second}}'
+    summary: '{{title}} — {{subtitle}}'
+    sortable_fields: [order, title]
+    media_folder: /uploads/gallery
+    public_folder: /uploads/gallery
+    fields:
+      - { label: 'Подпись — RU (например, имя клиента)', name: title, widget: string, required: false }
+      - { label: 'Вторая строка — RU (например, «Виза в США»)', name: subtitle, widget: string, required: false }
+      - { label: 'Раздел', name: category, widget: select, default: visa, options: [ { label: 'Визы (SelfVisa)', value: visa }, { label: 'Учёба (SelfAcademy)', value: study } ] }
+      - { label: 'Фото (вертикальное лучше всего)', name: photo, widget: image, required: false, hint: 'Для видео — это обложка (необязательно)' }
+      - { label: 'Видео — файл MP4 (короткое, до 20 МБ)', name: video, widget: file, required: false }
+      - { label: 'Видео — ссылка YouTube (вместо файла)', name: video_url, widget: string, required: false }
+      - { label: 'Подпись — KG', name: title_ky, widget: string, required: false }
+      - { label: 'Вторая строка — KG', name: subtitle_ky, widget: string, required: false }
+      - { label: 'Подпись — EN', name: title_en, widget: string, required: false }
+      - { label: 'Вторая строка — EN', name: subtitle_en, widget: string, required: false }
+      - { label: 'Порядок (меньше — раньше)', name: order, widget: number, value_type: int, default: 10, required: false }
+      - { label: 'Показывать на сайте', name: published, widget: boolean, default: true }
+
+  - name: home
+    label: '🏠 Главная страница и тексты'
+    files:
+      - { name: home_ru, label: 'Главная — Русский', file: content/home/ru.json, fields: &home_fields [
+          { label: 'SEO: заголовок', name: seo_title, widget: string },
+          { label: 'SEO: описание', name: seo_description, widget: text },
+          { label: 'Плашка над заголовком', name: hero_badge, widget: string, required: false },
+          { label: 'Главный заголовок (**выделение** — акцентным цветом)', name: hero_title, widget: string },
+          { label: 'Подзаголовок', name: hero_subtitle, widget: text },
+          { label: 'Фото в шапке (необязательно)', name: hero_image, widget: image, required: false },
+          { label: 'Цифры под заголовком', name: stats, widget: list, required: false, fields: [ { label: Цифра, name: value, widget: string }, { label: Подпись, name: label, widget: string } ] },
+          { label: 'Блок «Визы»: заголовок', name: visa_heading, widget: string },
+          { label: 'Блок «Визы»: текст', name: visa_text, widget: text },
+          { label: 'Блок «Учёба»: заголовок', name: study_heading, widget: string },
+          { label: 'Блок «Учёба»: текст', name: study_text, widget: text },
+          { label: 'Заголовок над визами', name: visa_grid_heading, widget: string },
+          { label: 'Заголовок над учёбой', name: study_grid_heading, widget: string },
+          { label: 'О нас: заголовок', name: about_heading, widget: string },
+          { label: 'О нас: текст', name: about_text, widget: markdown },
+          { label: 'Преимущества', name: advantages, widget: list, fields: [ { label: Заголовок, name: title, widget: string }, { label: Текст, name: text, widget: text } ] },
+          { label: 'Шаги: заголовок', name: steps_heading, widget: string },
+          { label: 'Шаги', name: steps, widget: list, fields: [ { label: Шаг, name: title, widget: string }, { label: Текст, name: text, widget: text } ] },
+          { label: 'Отзывы: надзаголовок', name: reviews_eyebrow, widget: string, required: false },
+          { label: 'Отзывы: заголовок', name: reviews_heading, widget: string, required: false },
+          { label: 'Старые отзывы (лучше добавлять в раздел «⭐ Отзывы»)', name: reviews, widget: list, required: false, summary: '{{fields.name}} — {{fields.tag}}', fields: [ { label: Имя, name: name, widget: string }, { label: 'Направление (например, «Виза в США»)', name: tag, widget: string, required: false }, { label: 'Оценка (1–5)', name: rating, widget: number, value_type: int, min: 1, max: 5, default: 5, required: false }, { label: 'Откуда отзыв (2ГИС, Google, Instagram)', name: source, widget: string, required: false }, { label: 'Дата (например, «Октябрь 2026»)', name: date, widget: string, required: false }, { label: Текст, name: text, widget: text } ] },
+          { label: 'Частые вопросы', name: faq, widget: list, required: false, fields: [ { label: Вопрос, name: q, widget: string }, { label: Ответ, name: a, widget: markdown } ] },
+          { label: 'Форма: заголовок', name: form_heading, widget: string },
+          { label: 'Форма: текст', name: form_text, widget: text },
+          { label: 'Форма: доп. варианты направлений', name: form_other_options, widget: list, required: false },
+          { label: 'Адрес', name: address, widget: string },
+          { label: 'Часы работы', name: hours, widget: string },
+          { label: 'Текст в подвале', name: footer_text, widget: text },
+          { label: 'Надписи интерфейса (кнопки, меню) — необязательно', name: ui, widget: object, required: false, collapsed: true, fields: [
+              { label: 'Меню: Визы', name: nav_visa, widget: string, required: false },
+              { label: 'Меню: Учёба', name: nav_study, widget: string, required: false },
+              { label: 'Кнопка консультации', name: cta_consult, widget: string, required: false },
+              { label: 'Кнопка WhatsApp', name: cta_whatsapp, widget: string, required: false },
+              { label: 'Начало сообщения в WhatsApp', name: wa_hello, widget: string, required: false },
+              { label: 'Примечание в подвале', name: footer_note, widget: text, required: false } ] } ] }
+      - { name: home_ky, label: 'Главная — Кыргызча', file: content/home/ky.json, fields: *home_fields }
+      - { name: home_en, label: 'Главная — English', file: content/home/en.json, fields: *home_fields }
+
+  - name: settings
+    label: '⚙️ Настройки и контакты'
+    files:
+      - name: site
+        label: 'Контакты, цвета, логотип'
+        file: content/settings/site.json
+        fields:
+          - { label: 'Название бренда', name: brand_name, widget: string }
+          - { label: 'Юр. название (в подвале)', name: legal_name, widget: string, required: false }
+          - { label: 'Адрес сайта', name: site_url, widget: string }
+          - { label: 'Телефон (как показывать)', name: phone_display, widget: string, hint: 'Например: +996 555 12 34 56' }
+          - { label: 'WhatsApp — номер только цифрами', name: whatsapp, widget: string, hint: 'Например: 996555123456. Сюда приходят все заявки с сайта' }
+          - { label: 'WhatsApp — как показывать (если отличается от телефона)', name: whatsapp_display, widget: string, required: false }
+          - { label: 'Instagram — ссылка', name: instagram, widget: string, required: false }
+          - { label: 'Instagram — @имя', name: instagram_handle, widget: string, required: false }
+          - { label: 'Email', name: email, widget: string, required: false }
+          - { label: 'Ссылка на карту (2ГИС / Google)', name: map_url, widget: string, required: false }
+          - label: 'Ссылки на отзывы в 2ГИС (кнопки под каруселью отзывов)'
+            name: review_links
+            widget: list
+            required: false
+            summary: '{{fields.title}}'
+            fields:
+              - { label: 'Название кнопки (например, SelfVisa)', name: title, widget: string }
+              - { label: 'Ссылка на профиль 2ГИС (вкладка «Отзывы»)', name: url, widget: string }
+          - { label: 'Карта для встраивания (src из iframe)', name: map_embed, widget: string, required: false }
+          - { label: 'Форма Битрикс24 — код для сайта (вставьте целиком <script…>…</script>)', name: b24_form, widget: text, required: false, hint: 'Заменяет форму WhatsApp внизу всех страниц. Пусто — работает форма WhatsApp' }
+          - { label: 'Форма Битрикс24 — для кыргызской версии (если пусто — та же)', name: b24_form_ky, widget: text, required: false }
+          - { label: 'Форма Битрикс24 — для английской версии (если пусто — та же)', name: b24_form_en, widget: text, required: false }
+          - { label: 'Основной цвет', name: color_primary, widget: color }
+          - { label: 'Акцентный цвет (кнопки)', name: color_accent, widget: color }
+          - { label: 'Логотип (если пусто — текстовый SELF)', name: logo, widget: image, required: false }
+          - { label: 'Иконка сайта (favicon)', name: favicon, widget: image, required: false }
+          - { label: 'Картинка для соцсетей (превью ссылки)', name: og_image, widget: image, required: false }
