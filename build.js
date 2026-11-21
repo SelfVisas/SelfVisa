@@ -86,6 +86,15 @@ async function makeSizes() {
   console.log('Сжато фото:', files.length);
 }
 
+// Версия файла по его содержимому: после любой правки браузеры (и телефоны) сразу берут новый файл
+const VER = {};
+function ver(rel) {
+  if (!VER[rel]) {
+    try { VER[rel] = require('crypto').createHash('md5').update(fs.readFileSync(path.join(ROOT, rel))).digest('hex').slice(0, 8); }
+    catch (e) { VER[rel] = String(Date.now()); }
+  }
+  return VER[rel];
+}
 // ---------- load content ----------
 const site = readJSON(path.join(ROOT, 'content/settings/site.json'), {});
 const home = {};
@@ -177,8 +186,8 @@ function head(l, from, { title, description, alternates, ogImage }) {
   <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
   <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="${asset(from, 'assets/fonts.css')}">
-  <link rel="stylesheet" href="${asset(from, 'assets/style.css')}">
+  <link rel="stylesheet" href="${asset(from, 'assets/fonts.css')}?v=${ver('assets/fonts.css')}">
+  <link rel="stylesheet" href="${asset(from, 'assets/style.css')}?v=${ver('assets/style.css')}">
   <style>:root{${site.color_primary ? `--brand:${esc(site.color_primary)};` : ''}${site.color_accent ? `--accent:${esc(site.color_accent)};` : ''}}</style>
 </head>`;
 }
@@ -267,7 +276,7 @@ function footer(l, from) {
 ${lightbox(l)}
 <a class="wa-float" href="${waLink()}" target="_blank" rel="noopener" aria-label="WhatsApp">${I.wa}</a>
 <script>window.SELF_WA=${JSON.stringify(waNumber)};</script>
-<script src="${asset(from, 'assets/site.js')}" defer></script>
+<script src="${asset(from, 'assets/site.js')}?v=${ver('assets/site.js')}" defer></script>
 </body></html>`;
 }
 
